@@ -1,0 +1,6 @@
+# Arbetsmaterial som inte hör till den publicerade sajten
+shots/
+prototype/
+tasks/
+.DS_Store
+content/innehall.v*.md

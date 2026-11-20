@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="sv" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varför hittar AI på saker?</title>
+<meta name="description" content="En dryg kvart under huven på ChatGPT och andra chattbotar: varför de hittar på saker ibland.">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/presentation.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 44 44"><path d="M7 23l11 11L38 10" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cross" viewBox="0 0 44 44"><path d="M9 9l26 26M35 9L9 35" fill="none" stroke="currentColor" stroke-width="6.5" stroke-linecap="round"/></symbol>
+  <symbol id="i-neq" viewBox="0 0 44 44"><path d="M6 16h32M6 29h32M30 5L14 39" fill="none" stroke="currentColor" stroke-width="5.5" stroke-linecap="round"/></symbol>
+</svg>
+
+<div id="stage" class="instant">
+
+  <!-- ================= Bild 0: titel ================= -->
+  <section class="slide" id="s0" aria-label="Titelbild: Varför hittar AI på saker?">
+    <h1 class="title">Varför hittar<br>AI på saker?</h1>
+    <p class="subtitle">En dryg kvart under huven på ChatGPT<br>och andra chattbotar</p>
+    <svg class="fyr" viewBox="0 0 560 600" aria-hidden="true">
+      <path class="beam" d="M262 150 L10 78 L10 232 Z"/>
+      <path class="beam" d="M318 150 L550 96 L550 214 Z"/>
+      <path class="sea" d="M0 508 H560"/>
+      <path class="fl" d="M40 508 Q110 436 232 444 Q340 428 446 472 Q500 490 524 508 Z"/>
+      <path class="fl" d="M232 444 L254 204 L326 204 L348 444 Z"/>
+      <path class="ink" d="M248.5 264 L331.5 264 L337 324 L243 324 Z"/>
+      <path class="ink" d="M278 444 V404 Q290 388 302 404 V444 Z"/>
+      <rect class="ink" x="238" y="188" width="104" height="16" rx="5"/>
+      <rect class="fl" x="258" y="122" width="64" height="66"/>
+      <circle class="lamp" cx="290" cy="155" r="19"/>
+      <path class="ink" d="M246 122 L290 80 L334 122 Z"/>
+      <path class="sea" d="M60 548 q18 -14 36 0 t36 0 M330 556 q18 -14 36 0 t36 0 t36 0 M180 580 q18 -14 36 0 t36 0"/>
+    </svg>
+  </section>
+
+  <!-- ================= Bild 1 ================= -->
+  <section class="slide" id="s1" aria-label="Bild 1: Säker på rösten, fel i sak">
+    <div class="chat">
+      <div class="msg user">
+        <div class="who">Du</div>
+        <div class="bubble" id="s1-qb"><span class="caret"></span><span class="ph">Skriv en fråga …</span><span id="s1-q"></span></div>
+      </div>
+      <div class="msg bot rv" id="s1-bot">
+        <div class="who">Chattbot</div>
+        <div class="bubble">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span id="s1-a" class="stream"></span>
+          <div class="stamp" data-show="2">Påhittat</div>
+        </div>
+      </div>
+    </div>
+    <div class="below">
+      <div class="stack">
+        <div data-show="2-2">
+          <p class="big">Det syntes inte på svaret.</p>
+          <p>Boken finns inte. Svaret är skrivet för att visa hur det kan se ut.</p>
+        </div>
+        <p class="def" data-show="3"><b>Hallucination:</b> chattboten hittar på, och låter lika säker som vanligt.</p>
+      </div>
+      <div class="case" data-show="4">
+        <div class="fact"><b>6</b>påhittade rättsfall</div>
+        <div class="fact"><b>5 000</b>dollar i böter</div>
+        <div class="where">Två advokater i New York, 2023<br><span class="realtag"><svg class="ic"><use href="#i-check"/></svg>Verklig händelse</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Bild 2 ================= -->
+  <section class="slide" id="s2" aria-label="Bild 2: Ni kan också fylla i">
+    <div class="one" data-show="0-5">
+      <p class="huge" id="s2-sent"></p>
+      <p class="sub" data-show="5-5">Lätt att fylla i. Fortfarande påhittat.</p>
+    </div>
+    <div class="sum" data-show="6">
+      <p>Bä, bä, vita <span class="tok">lamm</span></p>
+      <p>Sveriges huvudstad är <span class="tok">Stockholm</span></p>
+      <p>Romanen Fyren vid Gråskär skrevs av <span class="tok">Margit Holmsten</span></p>
+      <p class="closing">Att kunna fortsättningen<br>är inte att veta.</p>
+    </div>
+  </section>
+
+  <!-- ================= Bild 3 ================= -->
+  <section class="slide" id="s3" aria-label="Bild 3: Ett ord i taget, och snöbollen">
+    <h1 class="h1 md"><span data-show="0-2">Ett ord i taget.</span><span data-show="3">Nästa ord beror på hela texten hittills.</span></h1>
+    <div class="strip"><p id="s3-sent"></p></div>
+    <div class="next">
+      <div class="next-label"><span class="lbl-phone">Mobilen föreslår</span><span class="lbl-bars">Möjliga nästa ord</span></div>
+      <div class="phone"><span>morgon</span><span>kväll</span><span>helgen</span></div>
+      <div class="rows" id="s3-rows"></div>
+      <p class="closing">Därför blir ett påhitt detaljerat och sammanhängande.</p>
+    </div>
+    <p class="fixed" data-show="1"><strong>Även en mycket sannolik fortsättning kan vara fel.</strong>Procenten gäller nästa ord, inte sanningen. Siffrorna är påhittade.</p>
+  </section>
+
+  <!-- ================= Bild 4 ================= -->
+  <section class="slide" id="s4" aria-label="Bild 4: Tränad med en gissningslek">
+    <div class="kick">Steg 1: lära sig av text</div>
+    <h1 class="h1 trio"><span class="t1">Gissa.</span> <span class="t2">Jämför med texten.</span> <span class="t3">Justera.</span></h1>
+    <div class="grid">
+      <div class="blad recipe">
+        <div class="blad-h">Början av en riktig text</div>
+        <p>Smör, socker, ägg och <span class="hid"><span class="hw">mjöl</span></span></p>
+        <p class="facit" data-show="1">Facit: ordet som stod i texten.</p>
+      </div>
+      <div class="guess">
+        <div class="next-label">Modellen gissar nästa ord</div>
+        <div class="grow hit"><span class="w">mjöl</span><span class="track"><span class="fill" style="--p:46"></span><i class="mark"></i></span></div>
+        <div class="grow"><span class="w">mjölk</span><span class="track"><span class="fill" style="--p:27"></span></span></div>
+        <div class="grow"><span class="w">grädde</span><span class="track"><span class="fill" style="--p:13"></span></span></div>
+        <p class="more" data-show="2">Den fortsättningen får <b>lite högre sannolikhet</b> nästa gång.</p>
+      </div>
+    </div>
+    <div class="end" data-show="3">
+      <p class="line">Upprepas på enorma mängder text.</p>
+      <p class="closing">Facit = vad som stod där. Inte vad som är sant.</p>
+    </div>
+  </section>
+
+  <!-- ================= Bild 5 ================= -->
+  <section class="slide" id="s5" aria-label="Bild 5: Ett suddigt minne, inget uppslagsverk">
+    <h1 class="h1 md">Inget uppslagsverk. Ett suddigt fotografi.</h1>
+    <div class="panels">
+      <div data-show="1">
+        <p class="q">Vem skrev Pippi Långstrump?</p>
+        <div class="photo"><span>Astrid Lindgren</span></div>
+        <p class="cap"><b>Ofta skarpt.</b>Stod på väldigt många ställen.</p>
+      </div>
+      <div data-show="2">
+        <p class="q">Vilket år bildades hembygds­föreningen i en liten by?</p>
+        <div class="photo"><span class="blur">19?7</span></div>
+        <p class="cap"><b>Ofta suddigt.</b>Stod på något enstaka ställe.</p>
+      </div>
+      <div class="p3" data-show="3">
+        <p class="q">Vem skrev Fyren vid Gråskär?</p>
+        <div class="photo"><span class="fog"></span><span class="slip">Margit Holmsten, 1962</span></div>
+        <p class="cap"><b>Tomt. Ifyllt efter mönstret.</b>Stod ingenstans.</p>
+      </div>
+    </div>
+    <p class="end" data-show="4"><strong>Vanliga uppgifter är ofta lättare att återge.</strong><span>Men även välkända fakta kan bli fel. Fotografiet är en liknelse.</span></p>
+  </section>
+
+  <!-- ================= Bild 6 ================= -->
+  <section class="slide" id="s6" aria-label="Bild 6: Provet utan minuspoäng">
+
+    <div class="scene" data-show="0-1">
+      <div class="kick">Steg 2: lära sig hjälpa</div>
+      <h1 class="h1 md">Textfortsättaren tränas till assistent.</h1>
+      <div class="cols">
+        <div class="col">
+          <div class="col-h">Bara textfortsättare</div>
+          <div class="sheet blad">Vad är huvudstaden i Frankrike? <span id="s6-cont" class="stream"></span></div>
+          <div class="legend"><i></i>Gult är det modellen själv skriver.</div>
+        </div>
+        <div class="col">
+          <div class="col-h">Assistent</div>
+          <div class="msg user"><div class="bubble">Vad är huvudstaden i Frankrike?</div></div>
+          <div class="msg bot rv" id="s6-bot"><div class="bubble"><span id="s6-ans" class="stream"></span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene" data-show="2-3">
+      <h1 class="h1">Prov utan minuspoäng<span class="h1-add">: gissa lönar sig alltid.</span></h1>
+      <div class="exam-wrap">
+        <div class="exam blad">
+          <div class="exam-head"><span>Prov</span><span>Fråga 1</span></div>
+          <p class="exam-q">Vilket år föddes Astrid Lindgren?</p>
+          <div class="exam-alt"><span><b>A</b>1897</span><span><b>B</b>1902</span><span><b>C</b>1907</span><span><b>D</b>1912</span></div>
+          <div class="exam-line"><span>Svar:</span><div class="slot"><span class="tok">B, 1902</span></div></div>
+          <div class="rule">
+            <div><span>Rätt:</span><b>1 poäng</b></div>
+            <div><span>Fel:</span><b>0 poäng</b></div>
+            <div><span>Blankt:</span><b>0 poäng</b></div>
+          </div>
+        </div>
+        <div class="choice">
+          <p class="ask">Gissa eller lämna blankt?</p>
+          <div class="outs" data-show="3">
+            <div><b>Gissa</b>kanske 1 poäng</div>
+            <div><b>Lämna blankt</b>alltid 0 poäng</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene" data-show="4">
+      <div class="kick">Två modeller från 2025 – samma faktatest</div>
+      <h1 class="h1 md">Ett svårt test. Inte vardagsfrågor.</h1>
+      <div class="chart">
+        <div class="brow" data-show="4">
+          <div class="bname">Svarade<br>nästan alltid</div>
+          <div class="sbar">
+            <div class="seg abst" style="--p:1"></div>
+            <div class="seg wrong" style="--p:75"><span>Fel 75&nbsp;%</span></div>
+            <div class="seg right" style="--p:24"><span>Rätt 24&nbsp;%</span></div>
+            <div class="callout">Avstod 1&nbsp;%</div>
+          </div>
+        </div>
+        <div class="brow" data-show="5">
+          <div class="bname">Avstod<br>oftare</div>
+          <div class="sbar">
+            <div class="seg abst" style="--p:52"><span>Avstod 52&nbsp;%</span></div>
+            <div class="seg wrong" style="--p:26"><span>Fel 26&nbsp;%</span></div>
+            <div class="seg right" style="--p:22"><span>Rätt 22&nbsp;%</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="concl" data-show="6">Ungefär lika många rätt.<br><strong>Betydligt färre fel – fler ”jag vet inte”.</strong></p>
+      <p class="source">Källa: <a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">OpenAI, september 2025</a>. Testet SimpleQA, modellerna o4-mini (övre) och gpt-5-thinking-mini (undre).</p>
+    </div>
+  </section>
+
+  <!-- ================= Bild 7 ================= -->
+  <section class="slide" id="s7" aria-label="Bild 7: Lite slump i varje svar">
+    <h1 class="h1">Samma fråga, olika svar.</h1>
+    <div class="msg user"><div class="who">Samma fråga, tre gånger</div><div class="bubble">Vem skrev Fyren vid Gråskär?</div></div>
+    <div class="tri">
+      <div class="try" data-show="1"><div class="msg bot"><div class="who">Svar 1</div><div class="bubble">Margit Holmsten</div></div></div>
+      <div class="try diff" data-show="2"><div class="msg bot"><div class="who">Svar 2</div><div class="bubble">Karin Lindvall</div></div><div class="differs"><svg class="ic"><use href="#i-neq"/></svg>Ett annat namn</div></div>
+      <div class="try" data-show="3"><div class="msg bot"><div class="who">Svar 3</div><div class="bubble">Margit Holmsten</div></div></div>
+    </div>
+    <div class="end">
+      <p class="line" data-show="3"><b>Säger svaren emot varandra? Varningsklocka.</b></p>
+      <p class="closing" data-show="4">Stabilt är inget bevis – kontrollera mot en källa.</p>
+    </div>
+  </section>
+
+  <!-- ================= Bild 8 ================= -->
+  <section class="slide" id="s8" aria-label="Bild 8: Skrivbordet">
+    <h1 class="h1 md">Skrivbordet: det den har framför sig</h1>
+    <div class="two">
+      <div>
+        <div class="desk">
+          <div class="empty">(tomt bord)</div>
+          <div class="statute blad">
+            <h2>Föreningens stadgar</h2>
+            <p><span class="par">§ 7</span> Kallelse till årsmötet ska skickas senast <u>fyra veckor</u> före mötet.</p>
+          </div>
+          <div class="pile" id="s8-pile"></div>
+        </div>
+        <div class="caps stack">
+          <p data-show="1-1"><b>Tomt bord:</b> den gissar ur minnet.</p>
+          <p data-show="2-2"><b>Rätt papper på bordet:</b> färre fel.</p>
+          <p data-show="3-3"><b>Överfullt bord:</b> detaljer förbises.</p>
+          <p data-show="4-4"><b>Påminn om det viktiga.</b> Hjälper ofta, garanterar inget.</p>
+        </div>
+      </div>
+      <div class="chatcol">
+        <div class="stack">
+          <div class="msg user" data-show="0-3"><div class="who">Du</div><div class="bubble">Vad står det i våra stadgar om kallelse till årsmötet?</div></div>
+          <div class="msg user" data-show="4-4"><div class="who">Du</div><div class="bubble">Titta i § 7 igen. Vad står det där om kallelse?</div></div>
+        </div>
+        <div class="stack">
+          <div data-show="1-1"><div class="msg bot"><div class="who">Chattbot</div><div class="bubble">Kallelse ska skickas senast <b>två veckor</b> före årsmötet.</div></div><p class="verdict soft">Låter rimligt. Men det är inte era stadgar.</p></div>
+          <div data-show="2-2"><div class="msg bot"><div class="who">Chattbot</div><div class="bubble">Enligt § 7 ska kallelse skickas senast <b>fyra veckor</b> före årsmötet.</div></div><p class="verdict"><svg class="ic"><use href="#i-check"/></svg>Stämmer med § 7</p></div>
+          <div data-show="3-3"><div class="msg bot"><div class="who">Chattbot</div><div class="bubble">Kallelse ska skickas senast <b>två veckor</b> före årsmötet.</div></div><p class="verdict"><svg class="ic"><use href="#i-cross"/></svg>Stämmer inte med § 7</p></div>
+          <div data-show="4-4"><div class="msg bot"><div class="who">Chattbot</div><div class="bubble">Enligt § 7: senast <b>fyra veckor</b> före årsmötet.</div></div><p class="verdict"><svg class="ic"><use href="#i-check"/></svg>Stämmer med § 7</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Bild 9 ================= -->
+  <section class="slide" id="s9" aria-label="Bild 9: Därför hittar den på">
+    <h1 class="h1">Därför hittar den på</h1>
+    <div class="claims">
+      <p class="claim" data-show="1"><i>1</i>Svaret formuleras ord för ord.</p>
+      <p class="claim" data-show="2"><i>2</i>Underlaget kan saknas eller förbises.</p>
+      <p class="claim" data-show="3"><i>3</i>Den säger inte alltid ”jag vet inte”.</p>
+    </div>
+    <div data-show="4">
+      <div class="pair">
+        <div class="msg bot"><div class="bubble">Pippi Långstrump skrevs av Astrid Lindgren och gavs ut 1945.</div></div>
+        <div class="msg bot"><div class="bubble">Fyren vid Gråskär skrevs av Margit Holmsten och gavs ut 1962.</div></div>
+      </div>
+      <p class="line pairline"><b>Utifrån ser de likadana ut.</b> <span class="soft">Det ena är sant, det andra påhittat.</span></p>
+    </div>
+    <div class="end" data-show="5"><p class="closing">Samma sätt att formulera ger både korrekta svar och påhitt.</p></div>
+  </section>
+
+  <!-- ================= Bild 10 ================= -->
+  <section class="slide" id="s10" aria-label="Bild 10: Sökning hjälper, men löser inte allt">
+
+    <div class="scene" data-show="0-1">
+      <div class="kick">När chattboten får söka</div>
+      <h1 class="h1">Sökning kan hjälpa</h1>
+      <div class="two">
+        <div class="desk">
+          <div class="srccard blad" data-show="1" style="left:36px;top:28px;--r:-2deg"><h2>Fyrar i Bohuslän</h2><div class="lines"></div></div>
+          <div class="srccard blad" data-show="1" style="left:220px;top:192px;--r:1.5deg"><h2>Skärgårdsromaner</h2><div class="lines"></div></div>
+          <div class="srccard blad" data-show="1" style="left:70px;top:356px;--r:-1deg"><h2>Bibliotekets katalog</h2><div class="lines"></div></div>
+        </div>
+        <div class="chatcol">
+          <div class="msg user"><div class="who">Du</div><div class="bubble">Vem skrev Fyren vid Gråskär?</div></div>
+          <div class="msg bot" data-show="1"><div class="who">Chattbot</div><div class="bubble">Jag hittar ingen roman med den titeln. Menar du kanske en annan titel?</div></div>
+          <p class="line under" data-show="1"><b>Bra källor på bordet: färre fel.</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="scene sceneb" data-show="2">
+      <div class="kick">Samma modell läser och sammanfattar</div>
+      <h1 class="h1 md">Men en hänvisning kan vara felkopplad</h1>
+      <div class="two">
+        <div class="srcbig blad">
+          <h2><span class="ref">[1]</span> Fyrar i Bohuslän: en guide</h2>
+          <p>Vinga, Pater Noster, Hållö och <u>Gråskär</u> är några av kustens fyrplatser. Guiden visar hur du tar dig dit.</p>
+        </div>
+        <div class="chatcol">
+          <div class="msg bot"><div class="who">Chattbot</div><div class="bubble">Fyren vid Gråskär är skriven av Margit Holmsten <span class="ref">[1]</span>.<div class="stamp" data-show="3">Står inte där</div></div></div>
+          <p class="refnote"><span class="ref">[1]</span> är hänvisningen. Den pekar på källan.</p>
+        </div>
+      </div>
+      <div class="low stack">
+        <p class="line" data-show="3-3"><b>Länken finns. Påståendet står inte där.</b><br><span class="soft">Källan nämner Gråskär, men varken boken eller namnet.</span></p>
+        <div data-show="4">
+          <div class="ebu">
+            <span class="num">45&nbsp;%</span>
+            <p>av AI-assistenternas svar på nyhetsfrågor hade minst ett betydande problem.<span class="by">Studie av 22 public service-bolag, 2025. <span class="realtag"><svg class="ic"><use href="#i-check"/></svg>Verkliga siffror</span></span></p>
+          </div>
+          <p class="closing">En länk är en inbjudan att kontrollera, inget bevis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Bild 11 ================= -->
+  <section class="slide" id="s11" aria-label="Bild 11: Så använder du den klokt">
+
+    <div class="scene" data-show="0-1">
+      <h1 class="h1">Så använder du den klokt</h1>
+      <div class="mail" data-show="1">
+        <div>
+          <div class="who">Ditt utkast</div>
+          <div class="blad">Du har inte betalat medlemsavgiften. Betala senast fredag.</div>
+        </div>
+        <div class="msg bot">
+          <div class="who">Chattbotens förslag</div>
+          <div class="bubble">Hej! En vänlig påminnelse om medlemsavgiften. Betala gärna senast fredag. Tack!</div>
+        </div>
+      </div>
+      <p class="line mail-line" data-show="1"><b>Vänligare ton på några sekunder.</b> Du ser själv om det blev bra.</p>
+    </div>
+
+    <div class="scene" data-show="2-5">
+      <h1 class="h1 md">Kan jag bedöma resultatet själv?</h1>
+      <div class="board">
+        <div class="pilecol">
+          <h2>Bedöm själv</h2>
+          <p class="sub">Formulera om, ge idéer, första utkast</p>
+          <div class="card" data-show="2">Gör mitt mejl vänligare i tonen</div>
+        </div>
+        <div class="pilecol">
+          <h2>Kontrollera</h2>
+          <p class="sub">Namn, årtal, siffror, citat, källor, juridik, medicin</p>
+          <div class="card" data-show="3" style="--r:1deg">Ge mig ett citat av en känd person till mitt tal</div>
+          <div class="card" data-show="4" style="--r:-.6deg">Vilken dos av den här medicinen ska jag ta?</div>
+        </div>
+        <div class="card mid" data-show="5">Sammanfatta texten jag klistrat in<span>Beror på: har du läst texten själv?</span></div>
+      </div>
+    </div>
+
+    <div class="scene scenec" data-show="6">
+      <div class="kick">Tromsø kommun, 2025</div>
+      <div class="tromso">
+        <span class="num">11 <small>av</small> 18</span>
+        <p>källhänvisningar gick inte att spåra.<span>Flera hänvisade till påhittade publikationer. Underlaget till ett förslag om att lägga ner skolor, delvis framtaget med AI.</span></p>
+      </div>
+      <p class="closing">Kontrollera att källan finns och säger det som påstås.</p>
+      <span class="realtag"><svg class="ic"><use href="#i-check"/></svg>Verklig händelse</span>
+    </div>
+  </section>
+
+  <!-- ================= Bild 12 ================= -->
+  <section class="slide" id="s12" aria-label="Bild 12: Åttio år på en bild">
+    <h1 class="h1 md">Åttio år på en bild</h1>
+    <div class="tl">
+      <div class="axis"></div>
+      <div class="brk"><i></i><i></i></div>
+
+      <div class="ms up" style="--x:0px"><b>1943</b><span>Första modellen av en nervcell</span></div>
+      <div class="ms dn" style="--x:190px"><b>2012</b><span>Djupa nät slår igenom</span></div>
+      <div class="ms up" style="--x:380px"><b>2017</b><span>Transformern, dagens arkitektur</span></div>
+      <div class="ms dn" style="--x:570px"><b>2020</b><span>GPT-3</span></div>
+      <div class="ms up" style="--x:760px;--w:440px"><b>2022</b><span>ChatGPT släpps</span></div>
+      <div class="ms dn" style="--x:960px;--w:500px"><b>2023</b><span>Chattbotar börjar söka på nätet</span></div>
+      <div class="ms up r" style="--x:1660px;--w:400px"><b>2025</b><span>Färre fel genom att avstå oftare</span></div>
+      <i class="dot" style="--x:0px"></i><i class="dot" style="--x:190px"></i><i class="dot" style="--x:380px"></i><i class="dot" style="--x:570px"></i><i class="dot" style="--x:760px"></i><i class="dot" style="--x:960px"></i><i class="dot lit" style="--x:1658px"></i>
+
+      <div class="evs" data-show="1">
+        <div class="axis2"></div>
+        <div class="ev up" style="--x:960px"><b>Februari 2023</b><span>Bard-reklamen</span></div>
+        <div class="ev dn" style="--x:1150px;--w:500px"><b>Juni 2023</b><span>Advokaterna i New York</span></div>
+        <div class="ev up" style="--x:1400px"><b>Mars 2025</b><span>Tromsø kommun</span></div>
+        <i class="sq" style="--x:960px"></i><i class="sq" style="--x:1150px"></i><i class="sq" style="--x:1400px"></i>
+      </div>
+
+      <div class="key">
+        <div><i class="kd"></i>Byggstenarna</div>
+        <div data-show="1"><i class="ks"></i>Uppmärksammade fel</div>
+        <p>Tidsaxeln är inte skalenlig.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Bild 13 ================= -->
+  <section class="slide" id="s13" aria-label="Bild 13: Tre vanor, och mer att läsa">
+    <div class="wrap">
+      <div>
+        <h1 class="h1">Tre vanor</h1>
+        <ol class="habits">
+          <li>Ge underlaget.</li>
+          <li>Klicka på källorna.</li>
+          <li>Dubbelkolla det som har konsekvenser.</li>
+        </ol>
+        <p class="motto">Lätt att läsa är inte samma sak som rätt.</p>
+      </div>
+      <div class="qr">
+        <img src="assets/qr-fordjupning.svg" alt="QR-kod till fördjupningssidan: speakman.github.io/varfor-hittar-ai-pa/fordjupning">
+        <p>Läs mer, se källorna och filmerna:</p>
+        <p class="addr">speakman.github.io/<wbr>varfor-hittar-ai-pa/<wbr>fordjupning</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="chrome">
+    <div id="progress" aria-hidden="true"></div>
+    <div id="label"></div>
+  </footer>
+</div>
+
+<div id="black"></div>
+<div id="toast" role="status"></div>
+<div id="help">
+  <table>
+    <tr><th colspan="2">Tangenter</th></tr>
+    <tr><td>→ ↓ mellanslag PageDown</td><td>Nästa steg. Pågår en rörelse görs den först klar.</td></tr>
+    <tr><td>← ↑ PageUp</td><td>Föregående steg</td></tr>
+    <tr><td>Home / End</td><td>Första / sista bilden</td></tr>
+    <tr><td>B eller punkt</td><td>Svart skärm</td></tr>
+    <tr><td>T</td><td>Byt ljust och mörkt tema</td></tr>
+    <tr><td>S</td><td>Talarvy i eget fönster</td></tr>
+    <tr><td>F</td><td>Helskärm</td></tr>
+    <tr><td>R</td><td>Nollställ klockan</td></tr>
+    <tr><td>H</td><td>Visa eller dölj den här rutan</td></tr>
+    <tr class="tip"><td colspan="2">Med två skärmar: tryck S och dra talarvyn till din egen skärm. Klicka sedan i presentationen på projektorn och tryck F för helskärm. Klickern fungerar i båda fönstren.</td></tr>
+  </table>
+</div>
+<noscript>Presentationen kräver JavaScript.</noscript>
+
+<script src="assets/manus.js"></script>
+<script src="assets/presentation.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* Lokala typsnitt, så att sidorna fungerar utan nätverk.
+   Källa: Google Fonts (fonts.google.com), hämtade 2026-11-20 som variabla WOFF2-filer, delmängden "latin".
+   Source Serif 4: Adobe, github.com/adobe-fonts/source-serif. Licens: SIL Open Font License 1.1 (fonts/OFL-SourceSerif4.txt).
+   Atkinson Hyperlegible Next: Braille Institute, github.com/googlefonts/atkinson-hyperlegible-next.
+   Licens: SIL Open Font License 1.1 (fonts/OFL-AtkinsonHyperlegibleNext.txt). */
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/SourceSerif4-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("fonts/SourceSerif4-Italic-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible Next";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("fonts/AtkinsonHyperlegibleNext-latin.woff2") format("woff2");
+}
+
+/* Atkinson Hyperlegible ritar nollan överstruken (Ø), vilket läses fel i årtal som 2023.
+   Siffrorna 0–9 tas därför från systemets sansserif. Typsnittet finns lokalt på macOS och Windows. */
+@font-face {
+  font-family: "Siffror";
+  src: local("Helvetica Neue"), local("HelveticaNeue"), local("Arial"), local("ArialMT");
+  unicode-range: U+0030-0039;
+}
+@font-face {
+  font-family: "Siffror";
+  font-weight: 600 900;
+  src: local("HelveticaNeue-Bold"), local("Helvetica Neue Bold"), local("Arial Bold"), local("Arial-BoldMT");
+  unicode-range: U+0030-0039;
+}

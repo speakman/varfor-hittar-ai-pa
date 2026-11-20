@@ -1,0 +1,225 @@
+/* Fördjupningssidan. Skriven för mobil först: en kolumn, 18 px brödtext, tryckytor minst 44 px.
+   Ljust och mörkt följer telefonens inställning. */
+:root {
+  --paper: #FBF6EA;
+  --surface: #FFFFFF;
+  --ink: #1B2430;
+  --ink-soft: #4A5565;
+  --rule: #8A7F6B;
+  --hair: #E2D9C5;
+  --lamp: #FFC83D;
+  --lamp-pale: #FFEFC2;
+  --lamp-edge: #9A5B00;
+  --stamp: #B4261C;
+  --wrong: #B4261C;
+  --right: #12395C;
+  --link: #12395C;
+  --serif: "Source Serif 4", "Source Serif Pro", "Iowan Old Style", Charter, Palatino, Georgia, serif;
+  --sans: "Siffror", "Atkinson Hyperlegible Next", "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #0F1720;
+    --surface: #1B2633;
+    --ink: #F5EFE0;
+    --ink-soft: #B8C0CC;
+    --rule: #7C8A9B;
+    --hair: #2B3847;
+    --lamp-pale: #3A2F10;
+    --lamp-edge: #FFC83D;
+    --stamp: #FF8B7B;
+    --wrong: #F0705E;
+    --right: #6FB1E6;
+    --link: #9CCBF0;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 16px; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  padding: 0 20px calc(84px + env(safe-area-inset-bottom));
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 18px/1.6 var(--sans);
+  -webkit-font-smoothing: antialiased;
+}
+header.top, main, footer.foot { max-width: 34rem; margin: 0 auto; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; letter-spacing: -.01em; text-wrap: balance; }
+h1 { font-size: 2.3rem; margin: .2em 0 .4em; }
+h2 { font-size: 1.7rem; margin: 0 0 .6em; padding-top: 1.1em; border-top: 3px solid var(--hair); }
+h3 { font-size: 1.25rem; margin: 1.6em 0 .4em; }
+h4 { font: 700 .95rem/1.3 var(--sans); margin: 1.1em 0 .3em; color: var(--ink-soft); }
+p { margin: 0 0 1em; }
+section { margin-top: 2.6rem; }
+ul, ol { padding-left: 1.3em; margin: 0 0 1em; }
+li { margin-bottom: .5em; }
+a { color: var(--link); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible { outline: 3px solid var(--lamp-edge); outline-offset: 3px; border-radius: 4px; }
+.soft { color: var(--ink-soft); }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Språkmärkning på externa länkar */
+.lang {
+  display: inline-block;
+  padding: 0 .5em;
+  font: 600 .78rem/1.5 var(--sans);
+  color: var(--ink-soft);
+  border: 1.5px solid var(--rule);
+  border-radius: 999px;
+  white-space: nowrap;
+  vertical-align: .08em;
+}
+
+/* Sidhuvud */
+.top { padding-top: 28px; }
+.top .fyr { width: 92px; height: 99px; margin-left: -8px; }
+.fyr .fl { fill: var(--surface); stroke: var(--ink); stroke-width: 9; stroke-linejoin: round; }
+.fyr .ink { fill: var(--ink); }
+.fyr .beam { fill: var(--lamp); opacity: .45; }
+.fyr .lamp { fill: var(--lamp); stroke: var(--lamp-edge); stroke-width: 7; }
+.fyr .sea { fill: none; stroke: var(--rule); stroke-width: 8; stroke-linecap: round; }
+.eyebrow { margin: .6em 0 0; font-weight: 700; color: var(--ink-soft); }
+.lead { font-size: 1.15rem; }
+.btn {
+  display: inline-flex; align-items: center;
+  min-height: 48px; padding: 0 1.2em;
+  font-weight: 700; text-decoration: none;
+  color: var(--paper); background: var(--ink);
+  border-radius: 999px;
+}
+
+/* Presentationen är en 1920 x 1080-scen och går inte att läsa på en telefon. Länken visas bara på bred skärm. */
+.pres-wide { display: none; }
+.pres-narrow { padding: 12px 16px; border: 2px dashed var(--rule); border-radius: 10px; color: var(--ink-soft); }
+@media (min-width: 900px) { .pres-wide { display: block; } .pres-narrow { display: none; } }
+
+/* Tre saker och tre vanor */
+.big3, .habits, .steps { list-style: none; padding: 0; counter-reset: n; }
+.big3 li, .habits li {
+  position: relative;
+  margin: 0 0 12px; padding: 16px 18px 16px 62px;
+  background: var(--surface);
+  border: 2px solid var(--rule);
+  border-radius: 10px;
+  counter-increment: n;
+}
+.big3 li::before, .habits li::before {
+  content: counter(n);
+  position: absolute; left: 16px; top: 16px;
+  width: 32px; height: 32px; display: grid; place-items: center;
+  font: 700 1rem/1 var(--sans);
+  color: var(--paper); background: var(--ink);
+  border-radius: 50%;
+}
+.big3 strong, .habits strong { display: block; font: 600 1.25rem/1.25 var(--serif); margin-bottom: .2em; }
+.habits li { background: var(--lamp-pale); border-color: var(--lamp-edge); }
+.aside { margin-top: 1em; padding-left: 14px; border-left: 4px solid var(--lamp-edge); }
+
+.steps li { counter-increment: n; margin: 0 0 1.4em; }
+.steps h3 { margin: 0 0 .25em; }
+.steps h3::before { content: counter(n) ". "; color: var(--ink-soft); }
+.steps p { margin: 0; }
+
+/* Diagrammet: staplarna under varandra, siffrorna som text under varje stapel */
+.bars { margin: 1.4em 0; padding: 18px; background: var(--surface); border: 2px solid var(--rule); border-radius: 10px; }
+.bar-block + .bar-block { margin-top: 1.4em; }
+.bars h3 { font: 700 1.05rem/1.3 var(--sans); letter-spacing: 0; margin: 0 0 .5em; }
+.bars h3 span { font-weight: 400; color: var(--ink-soft); white-space: nowrap; }
+.bar { display: flex; gap: 3px; height: 44px; }
+.bar i, .key i { display: block; }
+.bar i { min-width: 5px; }
+.abst { background: repeating-linear-gradient(-45deg, transparent 0 5px, var(--rule) 5px 8px); box-shadow: inset 0 0 0 2.5px var(--ink); }
+.wrong { background: var(--wrong); }
+.right { background: var(--right); }
+.key { list-style: none; display: flex; flex-wrap: wrap; gap: 6px 18px; margin: .6em 0 0; padding: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.key li { display: flex; align-items: center; gap: 8px; margin: 0; }
+.key i { width: 18px; height: 18px; flex: none; }
+.bars figcaption { margin-top: 1.2em; padding-top: 1em; border-top: 2px solid var(--hair); font: 600 1.15rem/1.3 var(--serif); }
+
+/* Utfällbara kort */
+details.card { margin: 0 0 12px; background: var(--surface); border: 2px solid var(--rule); border-radius: 10px; }
+details.card summary {
+  position: relative;
+  display: block; cursor: pointer;
+  min-height: 48px; padding: 14px 52px 14px 18px;
+  list-style: none;
+}
+details.card summary::-webkit-details-marker { display: none; }
+details.card summary::after {
+  content: ""; position: absolute; right: 20px; top: 22px;
+  width: 11px; height: 11px;
+  border-right: 3px solid var(--ink); border-bottom: 3px solid var(--ink);
+  transform: rotate(45deg);
+}
+details.card[open] summary::after { transform: rotate(-135deg); top: 27px; }
+.s-title { display: block; font: 600 1.2rem/1.25 var(--serif); }
+.s-meta { display: block; font: 700 .85rem/1.5 var(--sans); color: var(--ink-soft); }
+.s-lead { display: block; margin-top: .4em; }
+.simpl .s-title { font-size: 1.1rem; }
+.card .more { padding: 0 18px 16px; border-top: 2px solid var(--hair); }
+.card .more p { margin: .8em 0 0; }
+.card .more h4 + p { margin-top: 0; }
+.srcs { list-style: none; padding: 0; margin: 0; }
+.srcs li { margin: 0; }
+.srcs a { display: inline-block; padding: 9px 0; min-height: 44px; }
+
+/* Filmer */
+.films { list-style: none; padding: 0; }
+.films li { margin: 0 0 12px; padding: 16px 18px; background: var(--surface); border: 2px solid var(--rule); border-radius: 10px; }
+.films li > a { display: block; font: 600 1.2rem/1.25 var(--serif); padding: 10px 0; }
+.film-meta { display: block; margin: .2em 0 .5em; font-size: .95rem; color: var(--ink-soft); }
+.films p { margin: 0; }
+
+/* Tidslinjen: lodrät. Runda fyllda punkter är byggstenar, fyrkantiga ihåliga är uppmärksammade fel. */
+.tl-key { display: flex; flex-wrap: wrap; gap: 6px 22px; font-weight: 600; }
+.tl-key span { display: inline-flex; align-items: center; gap: 9px; }
+.m-b, .m-f { display: inline-block; width: 16px; height: 16px; flex: none; }
+.m-b { border-radius: 50%; background: var(--ink); }
+.m-f { border: 4px solid var(--stamp); background: var(--paper); }
+.timeline { list-style: none; margin: 0; padding: 0 0 0 30px; border-left: 4px solid var(--ink); }
+.timeline li { position: relative; margin: 0 0 1.1em; }
+.timeline li::before { content: ""; position: absolute; left: -42px; top: 5px; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); box-shadow: 0 0 0 4px var(--paper); }
+.timeline li.fel::before { border-radius: 0; background: var(--paper); border: 4px solid var(--stamp); box-shadow: 0 0 0 4px var(--paper); }
+.timeline time { display: block; font: 600 1.15rem/1.3 var(--serif); }
+.timeline li.fel time { color: var(--stamp); }
+.timeline p { margin: 0; }
+
+/* Ordlista */
+.gloss dt { font: 600 1.2rem/1.3 var(--serif); margin-top: 1em; }
+.gloss dd { margin: .15em 0 0; }
+
+/* Sidfot och hopprad */
+.foot { margin-top: 3rem; padding-top: 1.4rem; border-top: 3px solid var(--hair); overflow-wrap: anywhere; }
+.dock {
+  position: fixed; left: 0; right: 0; bottom: 0;
+  display: flex; justify-content: center;
+  padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  border-top: 2px solid var(--rule);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.dock a {
+  flex: 1 1 0; max-width: 9.5rem;
+  display: grid; place-items: center;
+  min-height: 48px; padding: 0 4px;
+  font: 700 .86rem/1.15 var(--sans);
+  text-align: center; text-decoration: none;
+  color: var(--ink);
+  border-radius: 8px;
+}
+.dock a:active { background: var(--hair); }
+
+@media (min-width: 700px) {
+  body { font-size: 19px; }
+  h1 { font-size: 3rem; }
+  .top { padding-top: 56px; }
+}
+@media print {
+  .dock, .btn { display: none; }
+  details.card .more { display: block; }
+}
