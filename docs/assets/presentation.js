@@ -231,7 +231,7 @@ const LABEL = {
   8: s => (s >= 1 ? 'ill' : null),
   9: s => (s >= 4 ? 'ill' : null),
   10: s => (s <= 3 ? 'ill' : null),   // i steg 4 visas verkliga siffror, med egen märkning
-  11: s => (s >= 1 ? 'ill' : null)
+  11: () => 'ill'
 };
 /* Rörelser som drivs av CSS och är längre än en vanlig intoning (millisekunder per steg). */
 const HOLD = {

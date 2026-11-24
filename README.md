@@ -1,6 +1,6 @@
 # Varför hittar AI på saker?
 
-En kort, animerad föreläsning (cirka 17 minuter) för nybörjare om hur chattbotar som ChatGPT fungerar och varför de ibland hittar på.
+En kort, animerad föreläsning (cirka 16 minuter) för nybörjare om hur chattbotar som ChatGPT fungerar och varför de ibland hittar på.
 
 - **Presentationen:** https://speakman.github.io/varfor-hittar-ai-pa/ (gjord för stor skärm)
 - **Fördjupning, källor och filmer:** https://speakman.github.io/varfor-hittar-ai-pa/fordjupning

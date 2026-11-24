@@ -683,6 +683,17 @@ p, h1, h2 { margin: 0; }
 .card.mid { position: absolute; left: 50%; bottom: 0; width: 760px; margin-left: -380px; --r: .6deg; z-index: 2; }
 .card.mid span { display: block; margin-top: 6px; font-weight: 400; color: var(--ink-soft); }
 
+/* ---------- Bild 12: tre vanor och QR-kod ---------- */
+#s12 .wrap { display: grid; grid-template-columns: 1fr 640px; gap: 80px; align-items: start; }
+#s12 .habits { margin: 80px 0 0; padding: 0; list-style: none; counter-reset: v; }
+#s12 .habits li { display: flex; align-items: baseline; gap: 30px; margin-bottom: 50px; font: 600 76px/1.12 var(--serif); letter-spacing: -.012em; counter-increment: v; }
+#s12 .habits li::before { content: counter(v); flex: none; width: 82px; height: 82px; display: grid; place-items: center; font: 700 46px/1 var(--sans); color: var(--paper); background: var(--ink); border-radius: 50%; transform: translateY(-8px); }
+#s12 .motto { margin-top: 76px; font-size: 46px; color: var(--ink-soft); }
+#s12 .qr { text-align: center; padding-top: 6px; }
+#s12 .qr img { display: block; width: 610px; height: 610px; margin: 0 auto; border: 3px solid var(--rule); border-radius: 10px; background: #fff; }
+#s12 .qr p { margin-top: 22px; font-size: 40px; line-height: 1.25; }
+#s12 .qr .addr { margin-top: 12px; font: 700 54px/1.1 var(--sans); letter-spacing: .01em; overflow-wrap: anywhere; }
+
 /* ---------- Bild 13: tidslinjen, som ligger uppe under frågestunden ---------- */
 /* Två spår. Övre spåret: byggstenarna, runda fyllda punkter, etiketter växelvis över och under axeln.
    Undre spåret: uppmärksammade fel, fyrkantiga ihåliga markörer. Spåren skiljs åt i form och läge, inte bara i färg. */
@@ -722,17 +733,6 @@ p, h1, h2 { margin: 0; }
 .tl .key .kd { border-radius: 50%; background: var(--ink); }
 .tl .key .ks { border: 7px solid var(--stamp); }
 .tl .key p { color: var(--ink-soft); margin-top: 8px; }
-
-/* ---------- Bild 12: tre vanor och QR-kod ---------- */
-#s12 .wrap { display: grid; grid-template-columns: 1fr 640px; gap: 80px; align-items: start; }
-#s12 .habits { margin: 80px 0 0; padding: 0; list-style: none; counter-reset: v; }
-#s12 .habits li { display: flex; align-items: baseline; gap: 30px; margin-bottom: 50px; font: 600 76px/1.12 var(--serif); letter-spacing: -.012em; counter-increment: v; }
-#s12 .habits li::before { content: counter(v); flex: none; width: 82px; height: 82px; display: grid; place-items: center; font: 700 46px/1 var(--sans); color: var(--paper); background: var(--ink); border-radius: 50%; transform: translateY(-8px); }
-#s12 .motto { margin-top: 76px; font-size: 46px; color: var(--ink-soft); }
-#s12 .qr { text-align: center; padding-top: 6px; }
-#s12 .qr img { display: block; width: 610px; height: 610px; margin: 0 auto; border: 3px solid var(--rule); border-radius: 10px; background: #fff; }
-#s12 .qr p { margin-top: 22px; font-size: 40px; line-height: 1.25; }
-#s12 .qr .addr { margin-top: 12px; font: 700 54px/1.1 var(--sans); letter-spacing: .01em; overflow-wrap: anywhere; }
 
 /* ---------- Sidfot: förlopp och etikett ---------- */
 #chrome {

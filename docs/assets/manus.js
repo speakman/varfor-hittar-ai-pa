@@ -192,7 +192,7 @@ window.MANUS = [
       'Ibland beror det på. Har du läst texten själv kan du bedöma sammanfattningen. Annars: stickprova mot originalet.'
     ],
     cues: [
-      'Ditt utkast, och frågan med villkor.',
+      'Frågan med villkor, bredvid utkastet.',
       'Chattbotens förslag. Kontrollera: fredag står kvar.',
       'Följdfrågan ”Lite kortare, tack” och det kortare svaret.',
       'Ny scen: ”Bedöm själv” med tre kort.',

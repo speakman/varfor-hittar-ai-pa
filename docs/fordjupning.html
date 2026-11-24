@@ -60,7 +60,7 @@
     <li><strong>Klicka på källorna.</strong> Be om källor och kontrollera att påståendet verkligen står där.</li>
     <li><strong>Dubbelkolla det som har konsekvenser.</strong> Namn, årtal, siffror, citat, juridik och medicin.</li>
   </ol>
-  <p class="aside">Chattboten är som bäst när du själv kan bedöma resultatet: formulera om en text, ge idéer, skriva ett första utkast. Lätt att läsa är inte samma sak som rätt.</p>
+  <p class="aside">Chattboten är som bäst när du själv kan bedöma resultatet: göra om en text, förklara ett krångligt brev som du har klistrat in, bolla idéer eller skriva ett första utkast. Lätt att läsa är inte samma sak som rätt.</p>
 </section>
 
 <section id="integritet">
@@ -122,7 +122,7 @@
   <p>Alla tre andelarna (avstod, fel och rätt) kommer ur tabellen i OpenAI:s artikel.</p>
 
   <h3>Kan felen försvinna helt?</h3>
-  <p>Vi sa att ingen chattbot i dag är felfri. Vi sa inte att felen aldrig kan försvinna. OpenAI räknar själva ”hallucinationer är oundvikliga” som en missuppfattning: en modell kan avstå när den är osäker. Men för att aldrig hitta på måste modellen veta exakt när den inte vet, och den signalen är inte pålitlig i dag.</p>
+  <p>Om betalversionerna sa vi: <q class="sagt">ingen garanti mot fel</q>. Vi sa inte att felen aldrig kan försvinna. OpenAI räknar själva ”hallucinationer är oundvikliga” som en missuppfattning: en modell kan avstå när den är osäker. Men för att aldrig hitta på måste modellen veta exakt när den inte vet, och den signalen är inte pålitlig i dag.</p>
 
   <h4>Källor</h4>
   <ul class="srcs"><li><a href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">OpenAI: Why language models hallucinate</a> <span class="lang">engelska</span></li><li><a href="https://arxiv.org/abs/2509.04664" target="_blank" rel="noopener">Forskningsartikeln bakom, på arXiv</a> <span class="lang">engelska</span></li></ul>
@@ -187,31 +187,31 @@
   <h2>Förenklingar vi gjorde, och varför de är okej</h2>
   <p>En kvart räcker inte till alla nyanser. Här står vad vi sa, vad som är mer exakt och varför förenklingen ändå håller. Tryck på en rad för att läsa mer.</p>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Den väljer en trolig fortsättning, ett ord i taget.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Den räknar ut vilka fortsättningar som är troliga, väljer en, lägger till den och börjar om.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Den räknar ut en sannolikhet för varje möjlig nästa token (textbit) utifrån hela sammanhanget och väljer en. Tokens kan vara hela ord, delar av ord eller skiljetecken.</p><h4>Varför det är okej</h4><p>Rätt mekanism, vardagligt uttryckt. För att göra det bra har modellen lärt sig mycket om språk och om världen.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Samma sak som mobilens ordförslag, bara mycket bättre.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Principen (förutsäg fortsättningen) är densamma, men modellen är ofantligt mycket större och väger in hela sammanhanget. Skillnaden i skala ger en skillnad i förmåga som är mer än gradvis.</p><h4>Varför det är okej</h4><p>Vi sa också att bra gissningar kräver att modellen fångar grammatik, fakta och hur resonemang brukar gå.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”I grunden samma sak, bara oerhört mycket bättre.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Jämförelsen gällde mobilens ordförslag. Principen (förutsäg fortsättningen) är densamma, men modellen är ofantligt mycket större och väger in hela sammanhanget. Skillnaden i skala ger en skillnad i förmåga som är mer än gradvis.</p><h4>Varför det är okej</h4><p>Vi sa också att modellen har lärt sig mycket om språk och om världen, och att den kan dra slutsatser.</p></div>
 </details>
 <details class="card simpl">
   <summary><span class="s-meta">Vi sa</span><span class="s-title">”Procenten gäller nästa ord, inte sanningen.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Staplarna visade hur troligt ett ord är som fortsättning. En jämn fördelning behöver inte betyda kunskapsbrist (flera formuleringar kan vara rätt), och en tydlig etta kan vara fel. Siffrorna i staplarna var påhittade för att visa principen.</p><h4>Varför det är okej</h4><p>Vi sa uttryckligen att även en mycket sannolik fortsättning kan vara fel.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Själva modellen slår inte upp något. Chattjänsten kan söka.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>En chattjänst består av en språkmodell plus verktyg runt omkring: sökning, dokumentläsning, ibland minne mellan samtal. Modellen formulerar svaret, verktygen kan ge den underlag.</p><h4>Varför det är okej</h4><p>Skillnaden förklarar varför samma tjänst både kan hitta på och kan ge korrekta källor.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Själva modellen slår inte upp något.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>En chattjänst består av en språkmodell plus verktyg runt omkring: sökning, dokumentläsning, ibland minne mellan samtal. Modellen formulerar svaret, verktygen kan ge den underlag.</p><h4>Varför det är okej</h4><p>Vi sa också att en chattjänst ofta har verktyg runt omkring, som sökning på nätet. Skillnaden förklarar varför samma tjänst både kan hitta på och kan ge korrekta källor.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Nästa ord beror på hela texten hittills. Som en snöboll.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Varje ny textbit räknas fram utifrån allt som redan står, också det modellen själv nyss skrev. Ett tidigt felval finns kvar som förutsättning för resten. Forskare har beskrivit hur fel på så sätt kan bygga på varandra.</p><h4>Varför det är okej</h4><p>Det är den verkliga mekanismen, och den förklarar varför påhitt blir detaljerade och sammanhängande.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Nästa ord beror på hela texten hittills.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Vi liknade det vid en snöboll som rullar. Varje ny textbit räknas fram utifrån allt som redan står, också det modellen själv nyss skrev. Ett tidigt felval finns kvar som förutsättning för resten. Forskare har beskrivit hur fel på så sätt kan bygga på varandra.</p><h4>Varför det är okej</h4><p>Det är den verkliga mekanismen, och den förklarar varför påhitt blir detaljerade och sammanhängande.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Gissa, jämför med texten, justera.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Gissa. Jämför med texten. Justera.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Träningen mäter hur stor sannolikhet modellen gav den fortsättning som faktiskt stod i texten och ändrar alla parametrar en aning, med en matematisk metod som kallas backpropagation. Justeringen görs varje gång, inte bara när gissningen var fel.</p><h4>Varför det är okej</h4><p>Kärnan stämmer: modellen övar på riktig text och rättar sig själv.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Facit är vad som stod i texten, inte vad som är sant.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Facit = vad som stod där. Inte vad som är sant.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Det gäller grundträningen. I senare träningssteg belönas korrekta och hjälpsamma svar, så sanning kommer in där. Hur ofta modellen har rätt beror på uppgiften.</p><h4>Varför det är okej</h4><p>Vi tog upp den senare träningen direkt efteråt, och påstod inte att modellen aldrig tränas mot korrekthet.</p></div>
 </details>
 <details class="card simpl">
@@ -219,11 +219,11 @@
   <div class="more"><h4>Mer exakt</h4><p>Modellen kan återge vissa texter ordagrant, ibland även sådant som förekommit sällan. Den kan också dra slutsatser som aldrig stått någonstans. Men det finns ingen uppslagsfunktion som kontrollerar ett svar mot en källa.</p><h4>Varför det är okej</h4><p>Vi sa att vissa texter sitter ordagrant och att fotografiet är en liknelse.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Många miljarder små rattar.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Rattarna är tal, som kallas parametrar eller vikter. Stora modeller har från miljarder upp till hundratals miljarder eller fler. Exakta antal offentliggörs inte alltid.</p><h4>Varför det är okej</h4><p>En grov men säker storleksordning. Vi angav ingen exakt siffra.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Kvar finns inlärda mönster.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Mönstren ligger i tal, som kallas parametrar eller vikter. Tänk på dem som små rattar som ställs in under träningen. Stora modeller har från miljarder upp till hundratals miljarder eller fler. Exakta antal offentliggörs inte alltid.</p><h4>Varför det är okej</h4><p>Det stämmer att det inte finns något arkiv att slå i. Vi angav ingen siffra.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Tränas en gång till, med betyg från människor.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Modellen tränas en gång till, på exempelsamtal och med betyg från människor.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Det sker i flera steg: träning på exempelsamtal, träning utifrån mänskliga jämförelser och betyg, och allt oftare träning där andra modeller eller automatiska regler bedömer svaren. Metoderna skiljer sig mellan företag.</p><h4>Varför det är okej</h4><p>Huvudpoängen stämmer: assistentbeteendet är inlärt i ett senare steg, och det som belönas formar beteendet.</p></div>
 </details>
 <details class="card simpl">
@@ -235,35 +235,35 @@
   <div class="more"><h4>Mer exakt</h4><p>Liknelsen kommer från OpenAI (2025) och gäller framför allt hur modeller utvärderas och jämförs. Utvärderingarna styr i sin tur vad utvecklarna försöker förbättra. Det är en förklaring bland flera, inte den enda.</p><h4>Varför det är okej</h4><p>Vi sa vems förklaringen är, och att den är en del av förklaringen.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Tidiga versioner kunde mindre och avstod sällan.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Tidiga modeller var svagare generellt och sa sällan ifrån. Det finns ingen jämförbar mätserie från 2022 till i dag, och siffrorna i diagrammet jämför två modeller från 2025.</p><h4>Varför det är okej</h4><p>Vi gav ingen siffra för utvecklingen över tid, bara ett exempel från ett namngivet test.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Tidiga versioner hittade på så mycket.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Tidiga modeller var svagare generellt och sa sällan ifrån. Det finns ingen jämförbar mätserie från 2022 till i dag, och siffrorna i diagrammet jämför två modeller från 2025.</p><h4>Varför det är okej</h4><p>Vi sa att provet utan minuspoäng är en del av förklaringen, inte hela. Vi gav ingen siffra för utvecklingen över tid, bara ett exempel från ett namngivet test.</p></div>
 </details>
 <details class="card simpl">
   <summary><span class="s-meta">Vi sa</span><span class="s-title">”Ungefär lika många rätt. Betydligt färre fel.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Andelen rätt var 24&nbsp;procent för den ena modellen och 22&nbsp;procent för den andra. Skillnaden ligger i att den senare avstod i stället för att gissa fel. Siffrorna kommer ur tabellen i OpenAI:s artikel.</p><h4>Varför det är okej</h4><p>Påståendet är begränsat till testet och följer av siffrorna.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Lite slump i valet.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Modellen tar inte alltid den troligaste fortsättningen.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Hur mycket slump som används styrs av en inställning som kallas temperatur. Den ändrar hur spetsig sannolikhetsfördelningen är innan ett val görs. Den styr variationen, inte sanningen. Det finns fler inställningar, och i vanliga chattappar kan du oftast inte ändra dem.</p><h4>Varför det är okej</h4><p>Vi påstod inte att hög temperatur ger kreativitet eller att låg ger sanning.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Motstridiga svar är en varningssignal.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Motsäger svaren varandra är det en varningssignal.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>En användbar tumregel som också används i forskningen, men ingen garanti. Modellen kan vara stabil och ha fel, eller variera i formulering och ha rätt.</p><h4>Varför det är okej</h4><p>Vi sa uttryckligen att ett stabilt svar inte är något bevis.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Ett skrivbord med begränsat underlag.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Underlaget kallas kontextfönster och mäts i tokens. Det rymmer i dag hundratals sidor. Tjänsten avgör vad som skickas med: äldre delar kan klippas bort eller sammanfattas, och vissa tjänster har ett separat minne mellan samtal. Även det som finns med kan förbises, särskilt mitt i långa texter.</p><h4>Varför det är okej</h4><p>Begränsat underlag är rätt bild, och vi visade det realistiska problemet: ett tomt eller överfullt bord.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Tänk på det som ett skrivbord.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Det modellen har framför sig när den svarar kallas kontextfönster och mäts i tokens. Det rymmer i dag hundratals sidor. Tjänsten avgör vad som skickas med: äldre delar kan klippas bort eller sammanfattas, och vissa tjänster har ett separat minne mellan samtal. Även det som finns med kan förbises, särskilt mitt i långa texter.</p><h4>Varför det är okej</h4><p>Begränsat underlag är rätt bild, och vi visade det realistiska problemet: ett tomt eller överfullt bord.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Ingen pålitlig varningslampa.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Forskning tyder på att modeller har inre signaler som hänger ihop med hur säkra de är, och de kan ibland uttrycka osäkerhet träffsäkert. Men signalerna är inte tillförlitliga och styr inte alltid vad modellen skriver.</p><h4>Varför det är okej</h4><p>Ordet ”pålitlig” bär nyansen. Vi sa också att modellen kan säga ”jag vet inte”.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Den säger inte alltid ”jag vet inte”.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Forskning tyder på att modeller har inre signaler som hänger ihop med hur säkra de är, och de kan ibland uttrycka osäkerhet träffsäkert. Men signalerna är inte tillförlitliga och styr inte alltid vad modellen skriver.</p><h4>Varför det är okej</h4><p>Ordet ”alltid” bär nyansen. Modellen kan säga ”jag vet inte”, och nyare modeller gör det oftare.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Ingen chattbot i dag är felfri.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>OpenAI menar att hallucinationer inte är oundvikliga i princip: en modell kan avstå när den är osäker. Men det kräver att modellen vet när den inte vet, och den signalen är inte pålitlig. Träffsäkerheten når aldrig 100&nbsp;procent, eftersom vissa frågor inte går att besvara.</p><h4>Varför det är okej</h4><p>Påståendet gäller dagens chattbotar i praktiken, inte en princip.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Ingen garanti mot fel.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>OpenAI menar att hallucinationer inte är oundvikliga i princip: en modell kan avstå när den är osäker. Men det kräver att modellen vet när den inte vet, och den signalen är inte pålitlig. Träffsäkerheten når aldrig 100&nbsp;procent, eftersom vissa frågor inte går att besvara.</p><h4>Varför det är okej</h4><p>Påståendet gäller dagens chattjänster i praktiken, också betalversionerna. Det är ingen princip.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Bra källor kan minska felen.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Bra källor på bordet: färre fel.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Att ge modellen relevanta källor minskar felen i de flesta jämförelser, men hur mycket beror på uppgiften, källornas kvalitet och tjänsten. Hämtade texter kompletterar det modellen har lärt sig. De ersätter det inte.</p><h4>Varför det är okej</h4><p>Vi angav ingen siffra för förbättringen och ägnade lika mycket tid åt det som kan gå fel.</p></div>
 </details>
 <details class="card simpl">
@@ -271,7 +271,7 @@
   <div class="more"><h4>Mer exakt</h4><p>En hallucination är ett felaktigt men troligt svar utan avsikt att vilseleda. Om modeller i andra lägen kan bete sig vilseledande är ett eget forskningsområde som vi inte gick in på.</p><h4>Varför det är okej</h4><p>Rätt beskrivning av just hallucinationer.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Hallucinerar.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Det här kallas hallucination.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>Ordet är en metafor. Modellen upplever ingenting. En del forskare föredrar ”konfabulering”: att fylla minnesluckor med påhitt utan att märka det.</p><h4>Varför det är okej</h4><p>Det är ordet du troligen redan har hört.</p></div>
 </details>
 
