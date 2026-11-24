@@ -98,6 +98,10 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--lamp-edge); ou
 .pres-narrow { padding: 12px 16px; border: 2px dashed var(--rule); border-radius: 10px; color: var(--ink-soft); }
 @media (min-width: 900px) { .pres-wide { display: block; } .pres-narrow { display: none; } }
 
+.try { padding-left: 1.3em; }
+.try li { margin-bottom: .8em; }
+q { font-style: italic; }
+
 /* Tre saker och tre vanor */
 .big3, .habits, .steps { list-style: none; padding: 0; counter-reset: n; }
 .big3 li, .habits li {

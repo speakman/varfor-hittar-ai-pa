@@ -227,11 +227,11 @@ const LABEL = {
   4: () => 'ill',
   5: s => (s >= 1 ? 'ill' : null),
   6: s => (s >= 4 ? 'real' : 'ill'),
-  7: s => (s >= 1 ? 'ill' : null),
+  7: s => (s >= 2 ? 'ill' : null),
   8: s => (s >= 1 ? 'ill' : null),
   9: s => (s >= 4 ? 'ill' : null),
   10: s => (s <= 3 ? 'ill' : null),   // i steg 4 visas verkliga siffror, med egen märkning
-  11: s => (s >= 1 && s <= 5 ? 'ill' : null)
+  11: s => (s >= 1 ? 'ill' : null)
 };
 /* Rörelser som drivs av CSS och är längre än en vanlig intoning (millisekunder per steg). */
 const HOLD = {
@@ -241,7 +241,7 @@ const HOLD = {
   6: { 2: 1000, 4: 2800, 5: 2800 },
   8: { 2: 900, 3: 1500 },
   10: { 2: 1000, 3: 700 },
-  11: { 2: 1000, 6: 1000 }
+  11: { 4: 1100 }
 };
 const DEFAULT_HOLD = 650;
 

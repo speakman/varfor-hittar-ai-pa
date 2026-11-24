@@ -189,8 +189,8 @@
     </div>
 
     <div class="scene" data-show="4">
-      <div class="kick">Två modeller från 2025 – samma faktatest</div>
-      <h1 class="h1 md">Ett svårt test. Inte vardagsfrågor.</h1>
+      <div class="kick">Två modeller från 2025 – samma test, utan nätet</div>
+      <h1 class="h1 md">Extremt svåra detaljfrågor. Inte vardagen.</h1>
       <div class="chart">
         <div class="brow" data-show="4">
           <div class="bname">Svarade<br>nästan alltid</div>
@@ -216,17 +216,23 @@
   </section>
 
   <!-- ================= Bild 7 ================= -->
-  <section class="slide" id="s7" aria-label="Bild 7: Lite slump i varje svar">
+  <section class="slide" id="s7" aria-label="Bild 7: Frågan styr, och lite slump">
     <h1 class="h1">Samma fråga, olika svar.</h1>
-    <div class="msg user"><div class="who">Samma fråga, tre gånger</div><div class="bubble">Vem skrev Fyren vid Gråskär?</div></div>
+    <div class="qrow">
+      <div class="msg user"><div class="who">Samma fråga, tre gånger</div><div class="bubble">Vem skrev Fyren vid Gråskär?</div></div>
+      <div class="premise" data-show="1">
+        <p><b>Frågan förutsätter att boken finns.</b></p>
+        <p>Fråga hellre: ”Finns det något fel i mina antaganden?”</p>
+      </div>
+    </div>
     <div class="tri">
-      <div class="try" data-show="1"><div class="msg bot"><div class="who">Svar 1</div><div class="bubble">Margit Holmsten</div></div></div>
-      <div class="try diff" data-show="2"><div class="msg bot"><div class="who">Svar 2</div><div class="bubble">Karin Lindvall</div></div><div class="differs"><svg class="ic"><use href="#i-neq"/></svg>Ett annat namn</div></div>
-      <div class="try" data-show="3"><div class="msg bot"><div class="who">Svar 3</div><div class="bubble">Margit Holmsten</div></div></div>
+      <div class="try" data-show="2"><div class="msg bot"><div class="who">Svar 1</div><div class="bubble">Margit Holmsten</div></div></div>
+      <div class="try diff" data-show="3"><div class="msg bot"><div class="who">Svar 2</div><div class="bubble">Karin Lindvall</div></div><div class="differs"><svg class="ic"><use href="#i-neq"/></svg>Ett annat namn</div></div>
+      <div class="try" data-show="4"><div class="msg bot"><div class="who">Svar 3</div><div class="bubble">Margit Holmsten</div></div></div>
     </div>
     <div class="end">
-      <p class="line" data-show="3"><b>Säger svaren emot varandra? Varningsklocka.</b></p>
-      <p class="closing" data-show="4">Stabilt är inget bevis – kontrollera mot en källa.</p>
+      <p class="line" data-show="4"><b>Säger svaren emot varandra? Varningssignal.</b></p>
+      <p class="closing" data-show="5">Stabilt är inget bevis – kontrollera utanför chatten.</p>
     </div>
   </section>
 
@@ -245,7 +251,7 @@
         </div>
         <div class="caps stack">
           <p data-show="1-1"><b>Tomt bord:</b> den gissar ur minnet.</p>
-          <p data-show="2-2"><b>Rätt papper på bordet:</b> färre fel.</p>
+          <p data-show="2-2"><b>Rätt papper på bordet:</b> färre fel.<br><b>Dela bara sådant du får dela.</b></p>
           <p data-show="3-3"><b>Överfullt bord:</b> detaljer förbises.</p>
           <p data-show="4-4"><b>Påminn om det viktiga.</b> Hjälper ofta, garanterar inget.</p>
         </div>
@@ -269,7 +275,7 @@
   <section class="slide" id="s9" aria-label="Bild 9: Därför hittar den på">
     <h1 class="h1">Därför hittar den på</h1>
     <div class="claims">
-      <p class="claim" data-show="1"><i>1</i>Svaret formuleras ord för ord.</p>
+      <p class="claim" data-show="1"><i>1</i>Svaret skapas – det är inte automatiskt faktakontrollerat.</p>
       <p class="claim" data-show="2"><i>2</i>Underlaget kan saknas eller förbises.</p>
       <p class="claim" data-show="3"><i>3</i>Den säger inte alltid ”jag vet inte”.</p>
     </div>
@@ -298,7 +304,7 @@
         <div class="chatcol">
           <div class="msg user"><div class="who">Du</div><div class="bubble">Vem skrev Fyren vid Gråskär?</div></div>
           <div class="msg bot" data-show="1"><div class="who">Chattbot</div><div class="bubble">Jag hittar ingen roman med den titeln. Menar du kanske en annan titel?</div></div>
-          <p class="line under" data-show="1"><b>Bra källor på bordet: färre fel.</b></p>
+          <p class="line under" data-show="1"><b>Bra källor på bordet: färre fel.</b><br><span class="soft">Nyheter, öppettider, sådant som ändras: be den söka, öppna källan, kolla datum.</span></p>
         </div>
       </div>
     </div>
@@ -332,52 +338,70 @@
   <!-- ================= Bild 11 ================= -->
   <section class="slide" id="s11" aria-label="Bild 11: Så använder du den klokt">
 
-    <div class="scene" data-show="0-1">
-      <h1 class="h1">Så använder du den klokt</h1>
-      <div class="mail" data-show="1">
-        <div>
+    <div class="scene" data-show="0-3">
+      <h1 class="h1 md">Så använder du den klokt</h1>
+      <div class="method">
+        <div class="mleft">
           <div class="who">Ditt utkast</div>
-          <div class="blad">Du har inte betalat medlemsavgiften. Betala senast fredag.</div>
+          <div class="blad draft">Du har inte betalat medlemsavgiften. Betala senast fredag.</div>
+          <ol class="msteps">
+            <li data-show="1"><b>Fråga med villkor</b></li>
+            <li data-show="2"><b>Kontrollera resultatet</b><span><svg class="ic"><use href="#i-check"/></svg>Fredag står kvar</span></li>
+            <li data-show="3"><b>Be om en ändring</b></li>
+          </ol>
         </div>
-        <div class="msg bot">
-          <div class="who">Chattbotens förslag</div>
-          <div class="bubble">Hej! En vänlig påminnelse om medlemsavgiften. Betala gärna senast fredag. Tack!</div>
+        <div class="mchat">
+          <div class="msg user" data-show="1"><div class="bubble">Gör mitt mejl vänligare. Behåll uppgifterna och sista betalningsdagen. Högst tre meningar.</div></div>
+          <div class="msg bot" data-show="2"><div class="bubble">Hej! En vänlig påminnelse om medlemsavgiften. Betala gärna senast fredag. Tack!</div></div>
+          <div class="msg user" data-show="3"><div class="bubble">Lite kortare, tack.</div></div>
+          <div class="msg bot" data-show="3"><div class="bubble">Hej! Kom ihåg medlemsavgiften senast fredag. Tack!</div></div>
         </div>
       </div>
-      <p class="line mail-line" data-show="1"><b>Vänligare ton på några sekunder.</b> Du ser själv om det blev bra.</p>
     </div>
 
-    <div class="scene" data-show="2-5">
+    <div class="scene" data-show="4">
       <h1 class="h1 md">Kan jag bedöma resultatet själv?</h1>
       <div class="board">
         <div class="pilecol">
           <h2>Bedöm själv</h2>
-          <p class="sub">Formulera om, ge idéer, första utkast</p>
-          <div class="card" data-show="2">Gör mitt mejl vänligare i tonen</div>
+          <p class="sub">Du ser själv om det blev bra</p>
+          <div class="card" data-show="4">Gör mitt mejl vänligare i tonen</div>
+          <div class="card" data-show="4" style="--r:.8deg">Förklara ett krångligt brev</div>
+          <div class="card" data-show="4" style="--r:-.5deg">Bolla idéer, skriv ett utkast</div>
         </div>
         <div class="pilecol">
           <h2>Kontrollera</h2>
           <p class="sub">Namn, årtal, siffror, citat, källor, juridik, medicin</p>
-          <div class="card" data-show="3" style="--r:1deg">Ge mig ett citat av en känd person till mitt tal</div>
-          <div class="card" data-show="4" style="--r:-.6deg">Vilken dos av den här medicinen ska jag ta?</div>
+          <div class="card" data-show="5" style="--r:1deg">Ge mig ett citat av en känd person till mitt tal</div>
+          <div class="card" data-show="5" style="--r:-.6deg">Vilken dos av den här medicinen ska jag ta?</div>
         </div>
-        <div class="card mid" data-show="5">Sammanfatta texten jag klistrat in<span>Beror på: har du läst texten själv?</span></div>
+        <div class="card mid" data-show="6">Sammanfatta texten jag klistrat in<span>Beror på: har du läst texten själv?</span></div>
       </div>
-    </div>
-
-    <div class="scene scenec" data-show="6">
-      <div class="kick">Tromsø kommun, 2025</div>
-      <div class="tromso">
-        <span class="num">11 <small>av</small> 18</span>
-        <p>källhänvisningar gick inte att spåra.<span>Flera hänvisade till påhittade publikationer. Underlaget till ett förslag om att lägga ner skolor, delvis framtaget med AI.</span></p>
-      </div>
-      <p class="closing">Kontrollera att källan finns och säger det som påstås.</p>
-      <span class="realtag"><svg class="ic"><use href="#i-check"/></svg>Verklig händelse</span>
     </div>
   </section>
 
   <!-- ================= Bild 12 ================= -->
-  <section class="slide" id="s12" aria-label="Bild 12: Åttio år på en bild">
+  <section class="slide" id="s12" aria-label="Bild 12: Tre vanor, och mer att läsa">
+    <div class="wrap">
+      <div>
+        <h1 class="h1">Tre vanor</h1>
+        <ol class="habits">
+          <li>Ge underlag som du får dela.</li>
+          <li>Klicka på källorna.</li>
+          <li>Dubbelkolla det som har konsekvenser.</li>
+        </ol>
+        <p class="motto">Lätt att läsa är inte samma sak som rätt.</p>
+      </div>
+      <div class="qr">
+        <img src="assets/qr-fordjupning.svg" alt="QR-kod till fördjupningssidan: speakman.github.io/varfor-hittar-ai-pa/fordjupning">
+        <p>Prova själv, se källorna och filmerna:</p>
+        <p class="addr">speakman.github.io/<wbr>varfor-hittar-ai-pa/<wbr>fordjupning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Bild 13 ================= -->
+  <section class="slide" id="s13" aria-label="Bild 13: Åttio år på en bild">
     <h1 class="h1 md">Åttio år på en bild</h1>
     <div class="tl">
       <div class="axis"></div>
@@ -392,7 +416,7 @@
       <div class="ms up r" style="--x:1660px;--w:400px"><b>2025</b><span>Färre fel genom att avstå oftare</span></div>
       <i class="dot" style="--x:0px"></i><i class="dot" style="--x:190px"></i><i class="dot" style="--x:380px"></i><i class="dot" style="--x:570px"></i><i class="dot" style="--x:760px"></i><i class="dot" style="--x:960px"></i><i class="dot lit" style="--x:1658px"></i>
 
-      <div class="evs" data-show="1">
+      <div class="evs">
         <div class="axis2"></div>
         <div class="ev up" style="--x:960px"><b>Februari 2023</b><span>Bard-reklamen</span></div>
         <div class="ev dn" style="--x:1150px;--w:500px"><b>Juni 2023</b><span>Advokaterna i New York</span></div>
@@ -400,30 +424,16 @@
         <i class="sq" style="--x:960px"></i><i class="sq" style="--x:1150px"></i><i class="sq" style="--x:1400px"></i>
       </div>
 
-      <div class="key">
-        <div><i class="kd"></i>Byggstenarna</div>
-        <div data-show="1"><i class="ks"></i>Uppmärksammade fel</div>
-        <p>Tidsaxeln är inte skalenlig.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= Bild 13 ================= -->
-  <section class="slide" id="s13" aria-label="Bild 13: Tre vanor, och mer att läsa">
-    <div class="wrap">
-      <div>
-        <h1 class="h1">Tre vanor</h1>
-        <ol class="habits">
-          <li>Ge underlaget.</li>
-          <li>Klicka på källorna.</li>
-          <li>Dubbelkolla det som har konsekvenser.</li>
-        </ol>
-        <p class="motto">Lätt att läsa är inte samma sak som rätt.</p>
-      </div>
-      <div class="qr">
-        <img src="assets/qr-fordjupning.svg" alt="QR-kod till fördjupningssidan: speakman.github.io/varfor-hittar-ai-pa/fordjupning">
-        <p>Läs mer, se källorna och filmerna:</p>
-        <p class="addr">speakman.github.io/<wbr>varfor-hittar-ai-pa/<wbr>fordjupning</p>
+      <div class="tlfoot">
+        <img src="assets/qr-fordjupning.svg" alt="QR-kod till fördjupningssidan">
+        <div>
+          <div class="key">
+            <div><i class="kd"></i>Byggstenarna</div>
+            <div><i class="ks"></i>Uppmärksammade fel</div>
+            <p>Tidsaxeln är inte skalenlig.</p>
+          </div>
+          <p class="addr">speakman.github.io/<wbr>varfor-hittar-ai-pa/<wbr>fordjupning</p>
+        </div>
       </div>
     </div>
   </section>

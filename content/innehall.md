@@ -1,16 +1,16 @@
 # Varför hittar AI på saker?
 
-**Version 4 (2026-11-20).** Manuset stämmer med den byggda presentationen i `docs/index.html`. Talarmanuset nedan är samma text som talarvyn visar (tangenten S), uppdelad per klick. Texten hämtas ur `docs/assets/manus.js`. Föregående version finns i `innehall.v3.md`.
+**Version 5 (2026-11-24).** Manuset stämmer med den byggda presentationen i `docs/index.html`. Talarmanuset nedan är samma text som talarvyn visar (tangenten S), uppdelad per klick. Texten hämtas ur `docs/assets/manus.js`. Version 3 finns i `innehall.v3.md`. Version 5 lägger tyngdpunkten på vardagsnyttan: en arbetsmetod på bild 11, råd om vad man får dela, om medhåll och om aktualitet, och färre skandaler.
 
-**Undertitel:** En dryg kvart under huven på ChatGPT och andra chattbotar: varför de hittade på så mycket förr, och varför de fortfarande gör det ibland.
+**Undertitel:** En dryg kvart under huven på ChatGPT och andra chattbotar: varför de ibland hittar på saker, och hur du får nytta av dem ändå.
 
-**Format:** en titelbild (bild 0) och 13 bilder, cirka 17 minuter och 20 sekunder (20 minuter är ett hårt tak). Bild 1–2 är kroken, bild 3–8 byggstenarna, bild 9 svaret, bild 10–11 råden, bild 12 en tidslinje och bild 13 tre vanor med QR-kod, som står kvar under frågestunden.
+**Format:** en titelbild (bild 0) och 13 bilder, cirka 16 minuter (målet är högst 18, och 20 är ett hårt tak). Bild 1–2 är kroken, bild 3–8 byggstenarna, bild 9 svaret, bild 10–11 råden och bild 12 tre vanor med QR-kod. Bild 13 är en tidslinje som ligger uppe tyst under frågestunden, med en mindre QR-kod och adressen i hörnet.
 
 **Talarstyrd, inte interaktiv.** Talaren står vid en kateder med en klicker. Ingen i publiken rör något, och inget på bilderna ser ut som knappar. Det finns två publikmoment, och båda är muntliga: handuppräckningen på bild 1 ("Hur många tycker att det låter trovärdigt?") och frågan på bild 6 ("gissar ni, eller lämnar ni blankt?"). Bild 2 och bild 11 är talarens egna avslöjanden.
 
 **Klickern:** medan en rörelse pågår gör ett tryck bara klart den. Nästa tryck går vidare. Två tryck inom en kvarts sekund räknas som ett, åt båda håll.
 
-**Påhittade och verkliga uppgifter:** exempelsvar, sannolikheter, stadgar och källkort är påhittade men realistiska. Sådana bilder bär etiketten **"Påhittat exempel"**, och på bild 3 står "Påhittade siffror för att visa principen" i brödtextstorlek bredvid staplarna. Siffrorna på bild 6, nyhetsstudien på bild 10 och händelserna på bild 1, 9 och 11 är verkliga, har källa och är märkta **"Verkliga siffror"** eller **"Verklig händelse"**.
+**Påhittade och verkliga uppgifter:** exempelsvar, sannolikheter, stadgar, mejl och källkort är påhittade men realistiska. Sådana bilder bär etiketten **"Påhittat exempel"**, och på bild 3 står "Siffrorna är påhittade" i brödtextstorlek under staplarna. Siffrorna på bild 6, nyhetsstudien på bild 10 och advokatfallet på bild 1 är verkliga, har källa och är märkta **"Verkliga siffror"** eller **"Verklig händelse"**. Bard och Tromsø nämns inte längre i talet. De finns på fördjupningssidan.
 
 **Genomgående exempel:** romanen *Fyren vid Gråskär* och författaren Margit Holmsten är påhittade för föredraget och återkommer på bild 1, 2, 3, 5, 7, 9 och 10. Publiken ser samma påhitt uppstå steg för steg.
 
@@ -19,19 +19,19 @@
 ## Berättelsebågen
 
 0. **Titelbild:** ligger uppe medan publiken sätter sig.
-1. **Säker på rösten, fel i sak:** publiken får ett säkert svar om en bok och får veta att det är påhittat. Det syntes inte på svaret. Ordet hallucination, och advokatfallet.
+1. **Säker på rösten, fel i sak:** publiken får ett säkert svar om en bok och får veta att det är påhittat. Språket avslöjar inte felet. Ordet hallucination, advokatfallet, och en kort orientering: en chattjänst är en språkmodell med verktyg, och tjänster och versioner skiljer sig åt.
 2. **Ni kan också fylla i:** talaren fyller i tre meningar, den sista med ett namn alla vet är påhittat. Att kunna fortsättningen är inte att veta.
 3. **Ett ord i taget, och snöbollen:** modellen väljer en trolig fortsättning i taget, och nästa ord beror på hela texten hittills, så ett påhitt blir detaljerat och sammanhängande.
-4. **Tränad med en gissningslek (steg 1: lära sig av text):** den övar på att gissa nästa ord i enorma mängder text, och facit är vad som stod där, inte vad som är sant.
+4. **Tränad med en gissningslek (steg 1: lära sig av text):** den övar på att gissa nästa ord i enorma mängder text. Den lär sig mycket om språk och om världen, men facit är vad som stod där, inte vad som är sant.
 5. **Ett suddigt minne, inget uppslagsverk:** vanliga uppgifter är skarpa, ovanliga suddiga, och där inget finns kan modellen fylla i.
-6. **Provet utan minuspoäng (steg 2: lära sig hjälpa):** assistenten bedömdes länge så att gissningar lönade sig. Två modeller från 2025 på samma faktatest: den som avstår oftare gör betydligt färre fel.
-7. **Lite slump i varje svar:** motstridiga svar på samma fråga är en varningsklocka, men ett stabilt svar är inget bevis.
-8. **Skrivbordet:** tomt bord ger gissningar, rätt papper ger färre fel, överfullt bord gör att detaljer förbises.
-9. **Därför hittar den på:** svaret formuleras ord för ord, underlaget kan saknas eller förbises, och den säger inte alltid "jag vet inte".
-10. **Sökning hjälper, men löser inte allt:** riktiga källor kan minska felen, men en hänvisning kan vara felkopplad.
-11. **Så använder du den klokt:** använd den där du själv kan bedöma resultatet, och kontrollera det som har konsekvenser.
-12. **Åttio år på en bild:** en luftig tidslinje med sju byggstenar och tre uppmärksammade fel.
-13. **Tre vanor, och mer att läsa:** ge underlaget, klicka på källorna, dubbelkolla det som har konsekvenser. QR-kod och adress till fördjupningen.
+6. **Provet utan minuspoäng (steg 2: lära sig hjälpa):** assistenten bedömdes länge så att gissningar lönade sig. Två modeller från 2025 på samma extremt svåra test, utan nätet: den som avstår oftare gör betydligt färre fel. Siffrorna gäller inte vardagen.
+7. **Frågan styr, och lite slump:** en fråga som förutsätter något får lätt medhåll, så fråga öppet. Motstridiga svar är en varningssignal, men ett stabilt svar är inget bevis. Kontrollera utanför chatten.
+8. **Skrivbordet:** tomt bord ger gissningar, rätt papper ger färre fel, överfullt bord gör att detaljer förbises. Dela bara sådant du får dela.
+9. **Därför hittar den på:** svaret skapas och är inte automatiskt faktakontrollerat, underlaget kan saknas eller förbises, och den säger inte alltid "jag vet inte".
+10. **Sökning hjälper, men löser inte allt:** riktiga källor kan minska felen, och för sådant som ändras ska man be den söka och titta på datumet. Men en hänvisning kan vara felkopplad.
+11. **Så använder du den klokt:** en arbetsmetod i tre steg (fråga med villkor, kontrollera, be om en ändring), och sedan vad du kan bedöma själv och vad du måste kontrollera.
+12. **Tre vanor, och mer att läsa:** ge underlag som du får dela, klicka på källorna, dubbelkolla det som har konsekvenser. QR-kod och adress till fördjupningen.
+13. **Åttio år på en bild:** tidslinjen ligger uppe tyst under frågestunden.
 
 ## Tre saker publiken ska komma ihåg
 
@@ -59,7 +59,7 @@
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | [Ligger uppe medan publiken sätter sig.] Välkomna. Den närmaste dryga kvarten ska vi titta under huven på ChatGPT och andra chattbotar, och svara på en enda fråga: varför hittar de på saker? | Bild 1: ett tomt frågefält. |
+| 0 | [Ligger uppe medan publiken sätter sig.] Välkomna. Den närmaste dryga kvarten ska vi titta under huven på ChatGPT och andra chattbotar: varför de ibland hittar på saker, och hur du får nytta av dem ändå. | Bild 1: ett tomt frågefält. |
 
 ### Bild 1 – Säker på rösten, fel i sak
 
@@ -69,20 +69,20 @@
   - Svaret: "Fyren vid Gråskär skrevs av Margit Holmsten och gavs ut 1962. Romanen följer fyrvaktaren Elis under en stormig vinter i Bohusläns skärgård."
   - Stämpel: PÅHITTAT. "Det syntes inte på svaret." "Boken finns inte. Svaret är skrivet för att visa hur det kan se ut."
   - "Hallucination: chattboten hittar på, och låter lika säker som vanligt."
-  - "6 påhittade rättsfall", "5 000 dollar i böter", "Två advokater i New York, 2023", märkt "Verklig händelse".
+  - "6 påhittade rättsfall", "5 000 dollar i böter", "Två advokater i New York, 2023", märkt "Verklig händelse". Orienteringen om vad en chattjänst är sägs bara, den står inte på bilden.
 - **Koppling till hallucination:** Det här är själva fenomenet. Resten av föredraget förklarar hur just det här svaret kan uppstå.
 - **Publikmoment:** ja, muntligt: talaren frågar "Hur många tycker att det låter trovärdigt?" och väntar in händerna. Inget på bilden visar frågan eller några svarsalternativ.
 - **Klick:** 4
-- **Tid:** ca 1 min 45 s
+- **Tid:** ca 1 min 55 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Tänk dig att du frågar en chattbot om en bok. | Frågan skrivs och svaret spelas upp (cirka 8 s). |
+| 0 | Tänk dig att du frågar en chattbot, till exempel ChatGPT, om en bok. | Frågan skrivs och svaret spelas upp (cirka 8 s). |
 | 1 | Så här kan svaret se ut: författare, årtal, handling. [Vänta tills svaret står klart.] Hur många tycker att det låter trovärdigt? Hand upp. | Stämpeln PÅHITTAT. Fråga först: hur många tycker att det låter trovärdigt? |
-| 2 | Det är påhittat. Boken finns inte. Jag har skrivit svaret själv, för att visa hur det kan se ut. Och lägg märke till en sak: det syntes inte på svaret. | Ordet hallucination med förklaring. |
+| 2 | Det är påhittat. Boken finns inte. Jag har skrivit svaret själv, för att visa hur det kan se ut. Tyckte ni att det lät trovärdigt är det fullt begripligt. Språket avslöjar inte felet. | Ordet hallucination med förklaring. |
 | 3 | Det här kallas hallucination: chattboten hittar på, och låter lika säker som vanligt. | Advokatfallet: 6 påhittade rättsfall, 5 000 dollar. |
-| 4 | Och det händer på riktigt. 2023 lämnade två advokater i New York in en skrivelse till domstolen med sex rättsfall som ChatGPT hade hittat på. En av dem frågade chattboten om fallen var äkta, och den svarade ja. Det slutade med 5 000 dollar i böter. Många av er har kanske provat en tidig version och blivit besvikna. Det har blivit klart bättre sedan dess, men inte felfritt. Nu tittar vi under huven och ser varför. | Bild 2: ”Bä, bä, vita …” |
+| 4 | Och det händer på riktigt. 2023 lämnade två advokater i New York in sex rättsfall till en domstol, som ChatGPT hade hittat på. Det slutade med 5 000 dollar i böter. Ändå är de här tjänsterna till stor nytta, och det kommer vi till. En chattjänst som ChatGPT består av en språkmodell som formulerar text, och ofta verktyg runt omkring, som sökning på nätet. Tjänster och versioner skiljer sig åt. Betalversioner har andra modeller och verktyg, men ingen garanti mot fel. Nu tittar vi under huven. | Bild 2: ”Bä, bä, vita …” |
 
 ### Bild 2 – Ni kan också fylla i
 
@@ -96,18 +96,18 @@
 - **Koppling till hallucination:** Publiken märker att de själva gör det modellen gör: producerar en flytande fortsättning utan att den är kontrollerad.
 - **Publikmoment:** nej. Talaren läser början av meningen, låter publiken tänka tyst och klickar själv fram ordet.
 - **Klick:** 6
-- **Tid:** ca 1 min
+- **Tid:** ca 45 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Innan vi öppnar huven: avsluta den här meningen tyst för er själva. Bä, bä, vita … | Ordet ”lamm” fylls i. |
+| 0 | Avsluta den här meningen tyst för er själva. Bä, bä, vita … | Ordet ”lamm” fylls i. |
 | 1 | Lamm. | Ny mening: ”Sveriges huvudstad är …” |
 | 2 | Sveriges huvudstad är … | Ordet ”Stockholm” fylls i. |
 | 3 | Stockholm. | Ny mening: ”Romanen Fyren vid Gråskär skrevs av …” |
 | 4 | Romanen Fyren vid Gråskär skrevs av … | ”Margit Holmsten” fylls i, och raden ”Lätt att fylla i. Fortfarande påhittat.” |
-| 5 | Margit Holmsten. Märkte ni vad som hände? Namnet dök upp i huvudet, fast ni vet att det är påhittat. Det gick lätt, för ni såg det nyss. | Alla tre meningarna och slutsatsen: att kunna fortsättningen är inte att veta. |
-| 6 | Att kunna fortsättningen är alltså inte samma sak som att veta att det stämmer. En chattbot gör i grunden just det här: den fyller i fortsättningen. Den kan säga ”jag vet inte”. Men den gör det inte alltid när den borde. | Bild 3: ”Vi ses i …” och mobilens ordförslag. |
+| 5 | Margit Holmsten. Märkte ni vad som hände? Namnet dök upp i huvudet, fast ni vet att det är påhittat. | Alla tre meningarna och slutsatsen: att kunna fortsättningen är inte att veta. |
+| 6 | Att kunna fortsättningen är alltså inte samma sak som att veta att det stämmer. En chattbot gör i grunden just det här: den fyller i fortsättningen. | Bild 3: ”Vi ses i …” och mobilens ordförslag. |
 
 ### Bild 3 – Ett ord i taget, och snöbollen
 
@@ -124,14 +124,14 @@
 - **Koppling till hallucination:** Modellen måste alltid välja en fortsättning, och när den första biten av ett påhitt väl är lagd byggs resten för att passa ihop med den.
 - **Publikmoment:** nej
 - **Klick:** 5
-- **Tid:** ca 1 min 45 s
+- **Tid:** ca 1 min 30 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
 | 0 | Det känner ni igen från mobilen. Du skriver ”Vi ses i” och tangentbordet föreslår några ord: morgon, kväll, helgen. | ”Sveriges huvudstad är”: Stockholm 93 %. |
-| 1 | Språkmodellen i en chattbot gör i grunden samma sak, bara oerhört mycket bättre. Den räknar ut vilka fortsättningar som är troliga, väljer en, lägger till den och börjar om. Ett ord i taget. Egentligen små textbitar, som kallas tokens, men vi säger ord. Siffrorna här är påhittade för att visa principen. | ”Romanen Fyren vid Gråskär skrevs av”: en jämn topplista. |
-| 2 | Så här kan det se ut för vår bok. Lägg märke till en sak: staplarna visar hur texten troligen fortsätter, inte om påståendet är sant. Även en mycket sannolik fortsättning kan vara fel. Procenten gäller nästa ord, inte sanningen. Själva modellen slår inte upp något. Chattjänsten runt omkring kan söka på nätet, och det kommer vi till. | ”Margit” väljs och flyttas upp. Listan räknas om till efternamn. Rubriken byts. |
+| 1 | Språkmodellen i en chattbot gör i grunden samma sak, bara oerhört mycket bättre. Den räknar ut vilka fortsättningar som är troliga, väljer en, lägger till den och börjar om. Ett ord i taget. Siffrorna här är påhittade för att visa principen. | ”Romanen Fyren vid Gråskär skrevs av”: en jämn topplista. |
+| 2 | Så här kan det se ut för vår bok. Lägg märke till en sak: även en mycket sannolik fortsättning kan vara fel. Procenten gäller nästa ord, inte sanningen. Själva modellen slår inte upp något. | ”Margit” väljs och flyttas upp. Listan räknas om till efternamn. Rubriken byts. |
 | 3 | Modellen väljer ”Margit”. [Vänta medan ordet flyttas upp och listan räknas om.] Nu är listan en annan. Nästa ord beror på hela texten hittills, också på det modellen själv nyss skrev. Efter Margit passar ett efternamn. | ”Holmsten” väljs, ”och gavs ut” fylls på. Listan räknas om till årtal. |
 | 4 | Den väljer ”Holmsten” och fyller på med ”och gavs ut”. [Vänta på den nya listan.] Nu är det årtal som passar. | ”1962” väljs. Listan försvinner och slutraden visas. |
 | 5 | Den väljer 1962. Som en snöboll som rullar. Därför blir ett påhitt så detaljerat och sammanhängande. | Bild 4: steg 1, ett recept med ett dolt ord. |
@@ -148,15 +148,15 @@
 - **Koppling till hallucination:** Grundträningen övar på trolig text. Att det oftast också blir sant är en följd, inte en garanti.
 - **Publikmoment:** nej
 - **Klick:** 3
-- **Tid:** ca 1 min 5 s
+- **Tid:** ca 1 min
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Hur blir den bra på att gissa? Det är steg ett: att lära sig av text. Modellen får början av en riktig text, här ett recept, och ska gissa nästa ord. | Det dolda ordet avslöjas: ”mjöl”. |
+| 0 | Hur blir den bra på det här? Det är steg ett: att lära sig av text. Modellen får början av en riktig text, här ett recept, och ska gissa nästa ord. | Det dolda ordet avslöjas: ”mjöl”. |
 | 1 | Sedan jämförs gissningen med vad som faktiskt stod där. | Stapeln för ”mjöl” växer en aning. |
 | 2 | Och modellen justeras en aning, så att just den fortsättningen får lite högre sannolikhet nästa gång. | ”Upprepas på enorma mängder text” och ”Facit = vad som stod där”. |
-| 3 | Det här upprepas på enorma mängder text. För att gissa bra måste modellen fånga mönster: grammatik, fakta, stil, till och med hur resonemang brukar gå. Men lägg märke till vad facit är. Det är vad som stod i just den texten, inte vad som är sant. Mycket blir rätt på köpet, men det är inte det den övar på i det här steget. | Bild 5: ett suddigt fotografi. |
+| 3 | Det här upprepas på enorma mängder text. För att göra det bra har modellen lärt sig mycket om språk och om världen, och den kan dra slutsatser. Men lägg märke till vad facit är: vad som stod i just den texten, inte vad som är sant. Ett välformulerat svar är alltså inte automatiskt kontrollerat. | Bild 5: ett suddigt fotografi. |
 
 ### Bild 5 – Ett suddigt minne, inget uppslagsverk
 
@@ -170,16 +170,16 @@
 - **Koppling till hallucination:** En hallucination är ofta en ifylld lucka: där minnet är suddigt eller tomt kan du få det som borde ha stått där, inte det som stod där.
 - **Publikmoment:** nej
 - **Klick:** 4
-- **Tid:** ca 1 min 30 s
+- **Tid:** ca 1 min 10 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Vad finns kvar efter träningen? Inget arkiv som modellen kan slå i. Kvar finns inställningarna på många miljarder små rattar, som tillsammans fångar det den har lärt sig. Tänk på det som ett suddigt fotografi av allt den har läst. | Ofta skarpt: Astrid Lindgren. |
-| 1 | Det som stod på tusentals ställen, som att Astrid Lindgren skrev Pippi Långstrump, är oftast skarpt. Vissa texter sitter till och med ordagrant. | Ofta suddigt: ”19?7”. |
+| 0 | Vad finns kvar efter träningen? Inget arkiv som modellen kan slå i. Kvar finns inlärda mönster. Tänk på det som ett suddigt fotografi av allt den har läst. | Ofta skarpt: Astrid Lindgren. |
+| 1 | Det som stod på tusentals ställen, som att Astrid Lindgren skrev Pippi Långstrump, är oftast skarpt. | Ofta suddigt: ”19?7”. |
 | 2 | Ovanliga uppgifter är suddigare. De kan vara svårare att få rätt. | Tomt: dimma, och sedan den gula lappen ”Margit Holmsten, 1962”. |
 | 3 | Och där det inte finns något alls? När du ställer frågan kan modellen fylla i med något som passar mönstret: svensk skärgårdsroman, författarnamn, årtal. Lappen skrivs alltså när frågan ställs, inte under träningen. | Raden ”Vanliga uppgifter är ofta lättare att återge. Men även välkända fakta kan bli fel.” |
-| 4 | Ungefär som när du återberättar en film du såg för tio år sedan och fyller i luckorna utan att märka det. Modellen kan också dra nya slutsatser. Men ett författarnamn till en påhittad bok går inte att räkna ut. Vanliga uppgifter är ofta lättare att återge, men även välkända fakta kan bli fel. Det finns ingen källa att kontrollera mot. | Bild 6: steg 2, textfortsättaren och assistenten. |
+| 4 | Ungefär som när du återberättar en film du såg för tio år sedan och fyller i luckorna utan att märka det. Vanliga uppgifter är ofta lättare att återge, men även välkända fakta kan bli fel. Det finns ingen källa att kontrollera mot. | Bild 6: steg 2, textfortsättaren och assistenten. |
 
 ### Bild 6 – Provet utan minuspoäng
 
@@ -187,11 +187,11 @@
 - **Text på bilden:**
   - Scen 1. Överrubrik: "Steg 2: lära sig hjälpa". Rubrik: "Textfortsättaren tränas till assistent." Två kolumner med samma fråga, "Vad är huvudstaden i Frankrike?". Bara textfortsättare: "Vad är huvudstaden i Italien? Vad är huvudstaden i Spanien? Skriv dina svar på raden nedan." Assistent: "Huvudstaden i Frankrike är Paris." Rad: "Gult är det modellen själv skriver."
   - Scen 2. Rubrik: "Prov utan minuspoäng", som växer till "Prov utan minuspoäng: gissa lönar sig alltid." Provblad: "Vilket år föddes Astrid Lindgren?" A 1897, B 1902, C 1907, D 1912. Poängregel: Rätt 1 poäng, Fel 0 poäng, Blankt 0 poäng. Till höger: "Gissa eller lämna blankt?" Efter klick: gissningen "B, 1902" fylls i gult på svarsraden, och "Gissa: kanske 1 poäng", "Lämna blankt: alltid 0 poäng". Facit (1907) står inte på bilden. Talaren säger det.
-  - Scen 3. Överrubrik: "Två modeller från 2025 – samma faktatest". Rubrik: "Ett svårt test. Inte vardagsfrågor." Stapel 1, "Svarade nästan alltid": avstod 1 %, fel 75 %, rätt 24 %. Stapel 2, "Avstod oftare": avstod 52 %, fel 26 %, rätt 22 %. Slutsats: "Ungefär lika många rätt. Betydligt färre fel – fler jag vet inte." Källrad: OpenAI, september 2025, testet SimpleQA, modellerna o4-mini (övre) och gpt-5-thinking-mini (undre), med länk. Märkt "Verkliga siffror".
+  - Scen 3. Överrubrik: "Två modeller från 2025 – samma test, utan nätet". Rubrik: "Extremt svåra detaljfrågor. Inte vardagen." Stapel 1, "Svarade nästan alltid": avstod 1 %, fel 75 %, rätt 24 %. Stapel 2, "Avstod oftare": avstod 52 %, fel 26 %, rätt 22 %. Slutsats: "Ungefär lika många rätt. Betydligt färre fel – fler jag vet inte." Källrad: OpenAI, september 2025, testet SimpleQA, modellerna o4-mini (övre) och gpt-5-thinking-mini (undre), med länk. Märkt "Verkliga siffror".
 - **Koppling till hallucination:** Ett påhitt är ofta en gissning som systemet lärt sig att det lönar sig att chansa på. När "jag vet inte" börjar löna sig blir påhitten färre.
 - **Publikmoment:** ja, muntligt: "gissar ni, eller lämnar ni blankt? Hand upp ni som gissar."
 - **Klick:** 6
-- **Tid:** ca 2 min 25 s
+- **Tid:** ca 2 min 35 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
@@ -199,33 +199,35 @@
 | 0 | Hittills har vi en maskin som fortsätter text. Får den en fråga kan den lika gärna skriva fler frågor. | Assistenten svarar: Paris. |
 | 1 | Steg två är att lära sig hjälpa. Modellen tränas en gång till, på exempelsamtal och med betyg från människor. Då lär den sig svara på frågor, följa instruktioner och oftare svara rätt. | Provbladet. Fråga: gissa eller lämna blankt? Vänta in händerna. |
 | 2 | Men hur mäter man om en modell är bra? Länge ungefär som på ett prov utan minuspoäng. Tänk er ett sådant prov, och en fråga ni inte kan. Vad gör ni: gissar, eller lämnar blankt? Hand upp ni som gissar. | Gissningen ”B, 1902” fylls i gult. ”Gissa lönar sig alltid.” |
-| 3 | Självklart. Blankt ger noll, en gissning kan ge poäng. Rätt svar är förresten 1907, så den här gissningen gav noll. Men den kostade ingenting. Så har modellerna länge bedömts, och då lönar det sig att gissa. Det beskrev OpenAI själva hösten 2025. Det är en del av förklaringen till att många minns tidiga versioner som opålitliga: de kunde mindre, och de avstod sällan. | Stapeln för modellen som svarade nästan alltid (cirka 3 s). |
-| 4 | Här ser vi två sätt att svara på samma test: två modeller från 2025 och samma svåra faktafrågor. Den första svarade nästan alltid. Den avstod en gång av hundra och svarade fel 75 gånger av hundra. | Stapeln för modellen som avstod oftare (cirka 3 s). |
+| 3 | Självklart. Blankt ger noll, en gissning kan ge poäng. Rätt svar är förresten 1907, så den här gissningen gav noll. Men den kostade ingenting. Så har modellerna länge bedömts, och då lönar det sig att gissa. Det är en del av förklaringen till att tidiga versioner hittade på så mycket. | Stapeln för modellen som svarade nästan alltid (cirka 3 s). |
+| 4 | Nu ett test från OpenAI, hösten 2025. Det består av extremt svåra detaljfrågor, ungefär som den om hembygdsföreningen, och modellerna får inte söka på nätet. Siffrorna visar alltså inte hur ofta en chattbot har fel i vardagen. Två modeller från 2025 fick samma frågor. Den första svarade nästan alltid, och svarade fel 75 gånger av hundra. | Stapeln för modellen som avstod oftare (cirka 3 s). |
 | 5 | Den andra avstod 52 gånger och svarade fel 26. | Slutsatsen: ungefär lika många rätt, betydligt färre fel. |
-| 6 | Ungefär lika många rätt. Men den andra modellen avstår oftare och gör betydligt färre fel. | Bild 7: samma fråga tre gånger. |
+| 6 | Båda kunde ungefär lika många svar, runt en fjärdedel. Skillnaden är vad de gör när de inte kan: den andra avstår oftare och gör betydligt färre fel. | Bild 7: frågan om boken, tre gånger. |
 
-### Bild 7 – Lite slump i varje svar
+### Bild 7 – Frågan styr, och lite slump
 
-- **Kärnbudskap:** Det finns slump i hur orden väljs, så samma fråga kan ge olika svar. Motstridiga svar är en varningsklocka, men ett stabilt svar är inget bevis.
+- **Kärnbudskap:** Frågan styr svaret: en fråga som förutsätter något får lätt medhåll. Och det finns slump i hur orden väljs, så samma fråga kan ge olika svar. Motstridiga svar är en varningssignal, men ett stabilt svar är inget bevis.
 - **Text på bilden:**
   - Rubrik: "Samma fråga, olika svar."
   - Frågan "Vem skrev Fyren vid Gråskär?", märkt "Samma fråga, tre gånger".
+  - Bredvid frågan: "Frågan förutsätter att boken finns. Fråga hellre: Finns det något fel i mina antaganden?"
   - Tre svar sida vid sida: "Margit Holmsten", "Karin Lindvall" (inramat och märkt "≠ Ett annat namn"), "Margit Holmsten".
-  - "Säger svaren emot varandra? Varningsklocka."
-  - "Stabilt är inget bevis – kontrollera mot en källa."
-- **Koppling till hallucination:** Skiftande faktauppgifter avslöjar att modellen gissar. Att den svarar likadant varje gång visar bara att gissningen är stabil.
+  - "Säger svaren emot varandra? Varningssignal."
+  - "Stabilt är inget bevis – kontrollera utanför chatten."
+- **Koppling till hallucination:** En felaktig förutsättning i frågan kan följa med in i svaret. Skiftande faktauppgifter avslöjar att modellen gissar, men två svar från samma chattbot är inte två källor.
 - **Publikmoment:** nej
-- **Klick:** 4
-- **Tid:** ca 55 s
+- **Klick:** 5
+- **Tid:** ca 1 min 5 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | En sak till om hur orden väljs. Modellen tar inte alltid den troligaste fortsättningen. Det finns lite slump i valet, och hur mycket styrs av en inställning som kallas temperatur. Därför kan samma fråga ge olika svar. | Svar 1: Margit Holmsten. |
-| 1 | Vi ställer frågan om boken en gång. | Svar 2: Karin Lindvall, märkt ”Ett annat namn”. |
-| 2 | Och en gång till. Ett annat namn. | Svar 3: Margit Holmsten, och raden om varningsklockan. |
-| 3 | Och en tredje gång. Ställ gärna samma faktafråga två gånger. Får du uppgifter som säger emot varandra är det en varningsklocka. | Slutraden: stabilt är inget bevis. |
-| 4 | Men det omvända gäller inte. Tre likadana svar hade kunnat vara lika påhittade. Stabilt är inget bevis. Kontrollera mot en källa. | Bild 8: skrivbordet. |
+| 0 | Två saker till om hur svaren blir till. Titta först på frågan. | Lappen vid frågan: den förutsätter att boken finns. |
+| 1 | ”Vem skrev Fyren vid Gråskär?” förutsätter att boken finns. Och en assistent vill gärna vara till lags, så den hakar lätt på. Fråga hellre öppet: Vad talar för och emot? Finns det något fel i mina antaganden? | Svar 1: Margit Holmsten. |
+| 2 | Det andra är slumpen. Modellen tar inte alltid den troligaste fortsättningen. Därför kan samma fråga ge olika svar. Första gången: Margit Holmsten. | Svar 2: Karin Lindvall, märkt ”Ett annat namn”. |
+| 3 | Andra gången: ett annat namn. | Svar 3: Margit Holmsten, och raden om varningssignalen. |
+| 4 | Tredje gången: Margit Holmsten igen. Motsäger svaren varandra är det en varningssignal. | Slutraden: stabilt är inget bevis, kontrollera utanför chatten. |
+| 5 | Men det omvända gäller inte. Tre likadana svar kan vara lika påhittade, och två svar från samma chattbot är inte två källor. Kontrollera uppgiften utanför chatten. | Bild 8: skrivbordet. |
 
 ### Bild 8 – Skrivbordet
 
@@ -233,7 +235,7 @@
 - **Text på bilden:**
   - Rubrik: "Skrivbordet: det den har framför sig". Frågan: "Vad står det i våra stadgar om kallelse till årsmötet?"
   - Tomt bord. Svar: "Kallelse ska skickas senast två veckor före årsmötet." "Låter rimligt. Men det är inte era stadgar." "Tomt bord: den gissar ur minnet."
-  - Stadgarna läggs på bordet och går att läsa: "§ 7 Kallelse till årsmötet ska skickas senast fyra veckor före mötet." Svar: "Enligt § 7 ska kallelse skickas senast fyra veckor före årsmötet." Märkt med bock: "Stämmer med § 7". "Rätt papper på bordet: färre fel."
+  - Stadgarna läggs på bordet och går att läsa: "§ 7 Kallelse till årsmötet ska skickas senast fyra veckor före mötet." Svar: "Enligt § 7 ska kallelse skickas senast fyra veckor före årsmötet." Märkt med bock: "Stämmer med § 7". "Rätt papper på bordet: färre fel. Dela bara sådant du får dela."
   - Papper faller över stadgarna. Svar: "Kallelse ska skickas senast två veckor före årsmötet." Märkt med kryss: "Stämmer inte med § 7". "Överfullt bord: detaljer förbises."
   - En ny, vanlig chattfråga: "Titta i § 7 igen. Vad står det där om kallelse?" Svar: "Enligt § 7: senast fyra veckor före årsmötet." "Påminn om det viktiga. Hjälper ofta, garanterar inget."
 - **Koppling till hallucination:** Det som inte finns i underlaget, eller förbises i det, ersätts av gissningar ur det suddiga minnet.
@@ -245,17 +247,17 @@
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
 | 0 | När modellen svarar har den ett begränsat underlag framför sig: tjänstens instruktioner, samtalet och det du själv har lagt dit. Tänk på det som ett skrivbord. | Tomt bord: svaret ”två veckor”. |
-| 1 | Är bordet tomt, och du frågar vad som står i er förenings stadgar, har den bara sitt suddiga minne. Då kan du få en regel som låter rimlig men inte är er. | Stadgarna läggs på bordet. Svaret ”fyra veckor” stämmer med § 7. |
-| 2 | Lägger du stadgarna på bordet, genom att klistra in dem, har den något riktigt att läsa. Jämför paragraf sju med svaret: nu stämmer det. Rätt papper på bordet ger färre fel. | Överfullt bord: papper faller över stadgarna, svaret blir ”två veckor” igen. |
-| 3 | Men lasta inte på för mycket. På ett överfullt bord kan en detalj mitt i högen förbises, och i riktigt långa samtal kan gamla delar kortas ner eller falla bort. | Påminnelsen som en vanlig chattfråga. Rätt svar igen. |
-| 4 | Säg det viktiga igen om du märker att den har tappat det. Skriv det som en vanlig fråga i chatten. Finns texten kvar kan det hjälpa att peka på rätt stycke. Har den fallit bort behöver du klistra in den igen. Det hjälper ofta, men garanterar inget. | Bild 9: därför hittar den på. |
+| 1 | Är bordet tomt, och du frågar vad som står i er förenings stadgar, har den bara sitt suddiga minne. Då kan du få en regel som låter rimlig men inte är er. | Stadgarna läggs på bordet. Svaret ”fyra veckor” stämmer med § 7. Raden om vad du får dela. |
+| 2 | Klistrar du in stadgarna har den något riktigt att läsa. Jämför paragraf sju med svaret: nu stämmer det. Det du klistrar in ligger på bordet i det här samtalet. Det tränar inte om modellen medan ni pratar. Här är det offentliga stadgar. Dela bara sådant du får dela: klistra inte in lösenord, personnummer eller känsliga uppgifter, och följ jobbets regler. | Överfullt bord: papper faller över stadgarna, svaret blir ”två veckor” igen. |
+| 3 | Men lasta inte på för mycket. På ett överfullt bord kan en detalj mitt i högen förbises, och i riktigt långa samtal kan gamla delar falla bort. | Påminnelsen som en vanlig chattfråga. Rätt svar igen. |
+| 4 | Säg det viktiga igen om den har tappat det. Finns texten kvar kan det hjälpa att peka på rätt stycke. Har den fallit bort behöver du klistra in den igen. | Bild 9: därför hittar den på. |
 
 ### Bild 9 – Därför hittar den på
 
-- **Kärnbudskap:** Tre saker förklarar påhitten: svaret formuleras ord för ord, underlaget kan saknas eller förbises, och modellen säger inte alltid "jag vet inte". Samma sätt att formulera text kan ge både korrekta svar och påhitt.
+- **Kärnbudskap:** Tre saker förklarar påhitten: svaret skapas och är inte automatiskt faktakontrollerat, underlaget kan saknas eller förbises, och modellen säger inte alltid "jag vet inte". Samma sätt att formulera text kan ge både korrekta svar och påhitt.
 - **Text på bilden:**
   - Rubrik: "Därför hittar den på"
-  - 1. "Svaret formuleras ord för ord."
+  - 1. "Svaret skapas – det är inte automatiskt faktakontrollerat."
   - 2. "Underlaget kan saknas eller förbises."
   - 3. "Den säger inte alltid jag vet inte."
   - Två svar sida vid sida i identisk stil: "Pippi Långstrump skrevs av Astrid Lindgren och gavs ut 1945." och "Fyren vid Gråskär skrevs av Margit Holmsten och gavs ut 1962." Rad: "Utifrån ser de likadana ut. Det ena är sant, det andra påhittat."
@@ -263,23 +265,23 @@
 - **Koppling till hallucination:** Det här är svaret på föredragets fråga: hallucinationer är en följd av hur modellen fungerar och hur den har belönats, inte ett tillfälligt fel i maskinen.
 - **Publikmoment:** nej
 - **Klick:** 5
-- **Tid:** ca 1 min
+- **Tid:** ca 55 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Nu kan vi svara på frågan. | Påstående 1: svaret formuleras ord för ord. |
-| 1 | Ett: svaret formuleras ord för ord, efter vad som är en trolig fortsättning. | Påstående 2: underlaget kan saknas eller förbises. |
+| 0 | Nu kan vi svara på frågan. | Påstående 1: svaret skapas, det är inte automatiskt faktakontrollerat. |
+| 1 | Ett: svaret skapas, ord för ord. Det är inte automatiskt faktakontrollerat. | Påstående 2: underlaget kan saknas eller förbises. |
 | 2 | Två: underlaget kan saknas eller förbises. Minnet är suddigt, inget uppslagsverk. | Påstående 3: den säger inte alltid ”jag vet inte”. |
-| 3 | Tre: den säger inte alltid ”jag vet inte”. Länge belönades gissningar. Nu tränas modellerna att avstå, och felen har blivit färre. Men modellen har ingen pålitlig varningslampa. | Två svar sida vid sida: utifrån ser de likadana ut. |
+| 3 | Tre: den säger inte alltid ”jag vet inte”. Länge belönades gissningar. Nyare modeller avstår oftare, och felen har blivit färre. | Två svar sida vid sida: utifrån ser de likadana ut. |
 | 4 | Titta på de här två svaren. Vilket låter osäkert? Inget. Utifrån ser de likadana ut. | Slutraden: samma sätt att formulera ger både korrekta svar och påhitt. |
-| 5 | Samma sätt att formulera text kan ge både korrekta svar och påhitt. Därför räcker inte en självsäker ton som bevis. Dagens chattbotar gör fortfarande fel. Och kom ihåg: ett felaktigt svar betyder inte att någon försöker lura dig. | Bild 10: sökning kan hjälpa. |
+| 5 | Samma sätt att formulera text kan ge både korrekta svar och påhitt. Därför räcker inte en självsäker ton som bevis. Och kom ihåg: ett felaktigt svar betyder inte att någon försöker lura dig. | Bild 10: sökning kan hjälpa. |
 
 ### Bild 10 – Sökning hjälper, men löser inte allt
 
 - **Kärnbudskap:** När chattboten får söka och läsa riktiga källor kan felen bli färre, men det är samma modell som läser och sammanfattar.
 - **Text på bilden:**
-  - Scen 1. Överrubrik: "När chattboten får söka". Rubrik: "Sökning kan hjälpa". Tre källkort läggs på skrivbordet ("Fyrar i Bohuslän", "Skärgårdsromaner", "Bibliotekets katalog"). Svar: "Jag hittar ingen roman med den titeln. Menar du kanske en annan titel?" Rad: "Bra källor på bordet: färre fel."
+  - Scen 1. Överrubrik: "När chattboten får söka". Rubrik: "Sökning kan hjälpa". Tre källkort läggs på skrivbordet ("Fyrar i Bohuslän", "Skärgårdsromaner", "Bibliotekets katalog"). Svar: "Jag hittar ingen roman med den titeln. Menar du kanske en annan titel?" Rader: "Bra källor på bordet: färre fel." "Nyheter, öppettider, sådant som ändras: be den söka, öppna källan, kolla datum."
   - Scen 2. Överrubrik: "Samma modell läser och sammanfattar". Rubrik: "Men en hänvisning kan vara felkopplad". Ett källkort som går att läsa: "[1] Fyrar i Bohuslän: en guide. Vinga, Pater Noster, Hållö och Gråskär är några av kustens fyrplatser. Guiden visar hur du tar dig dit." Svar: "Fyren vid Gråskär är skriven av Margit Holmsten [1]." Förklaring: "[1] är hänvisningen. Den pekar på källan."
   - Stämpel: STÅR INTE DÄR. "Länken finns. Påståendet står inte där. Källan nämner Gråskär, men varken boken eller namnet."
   - "45 % av AI-assistenternas svar på nyhetsfrågor hade minst ett betydande problem. Studie av 22 public service-bolag, 2025." Märkt "Verkliga siffror". Slutrad: "En länk är en inbjudan att kontrollera, inget bevis."
@@ -291,73 +293,71 @@
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Många chattbotar kan numera söka på nätet eller läsa dokument du laddar upp. | Tre källor läggs på bordet. Svaret: ”Jag hittar ingen roman med den titeln.” |
-| 1 | Då hamnar riktiga texter på skrivbordet. Här hittar den inget om boken, och säger det. Bra och relevanta källor kan minska felen, och du får länkar att klicka på. | Ny scen: ett källkort och ett svar med hänvisningen [1]. |
+| 0 | Många chattbotar kan numera söka på nätet eller läsa dokument du laddar upp. | Tre källor läggs på bordet. Svaret: ”Jag hittar ingen roman med den titeln.” Raden om det som ändras. |
+| 1 | Då hamnar riktiga texter på skrivbordet. Ställer du frågan om boken till en chattbot som söker kan du få det här svaret: den hittar ingen sådan roman, och säger det. Det modellen lärde sig under träningen har dessutom ett slutdatum. För nyheter, öppettider och annat som ändras: be den söka, öppna källan och titta på datumet. | Ny scen: ett källkort och ett svar med hänvisningen [1]. |
 | 2 | Men det är samma modell som läser och sammanfattar. Här har den hittat en guide om fyrar och satt en liten etta efter namnet. Ettan är en hänvisning: den pekar på källan. | Stämpeln STÅR INTE DÄR. |
-| 3 | Men läs källan. Den nämner Gråskär, men varken boken eller Margit Holmsten. Länken finns. Påståendet står inte där. Modellen kan också missförstå en källa, blanda ihop två eller välja en dålig. | Nyhetsstudien: 45 %. Slutraden om länken. |
-| 4 | I en internationell studie, publicerad i oktober 2025, testade 22 public service-bolag, bland dem SVT, AI-assistenter med nyhetsfrågor. 45 procent av svaren hade minst ett betydande problem. Vart femte hade betydande sakfel, och nästan vart tredje hade problem med källorna. Så en länk är inget bevis. Den är en inbjudan att kontrollera. | Bild 11: så använder du den klokt. |
+| 3 | Men läs källan. Den nämner Gråskär, men varken boken eller Margit Holmsten. Länken finns. Påståendet står inte där. | Nyhetsstudien: 45 %. Slutraden om länken. |
+| 4 | I en internationell studie från 2025 testade 22 public service-bolag, bland dem SVT, AI-assistenter med nyhetsfrågor. 45 procent av svaren hade minst ett betydande problem. Så en länk är inget bevis. Den är en inbjudan att kontrollera. | Bild 11: så använder du den klokt. |
 
 ### Bild 11 – Så använder du den klokt
 
-- **Kärnbudskap:** Använd chattboten där du själv kan bedöma resultatet, och kontrollera mot en källa eller en sakkunnig när det får konsekvenser om det är fel.
+- **Kärnbudskap:** Använd chattboten där du själv kan bedöma resultatet: fråga med villkor, kontrollera och be om ändringar. Kontrollera mot en källa eller en sakkunnig när det får konsekvenser om det är fel.
 - **Text på bilden:**
-  - Scen 1. Rubrik: "Så använder du den klokt". Ett mejl före och efter. Ditt utkast: "Du har inte betalat medlemsavgiften. Betala senast fredag." Chattbotens förslag: "Hej! En vänlig påminnelse om medlemsavgiften. Betala gärna senast fredag. Tack!" Rad: "Vänligare ton på några sekunder. Du ser själv om det blev bra."
-  - Scen 2. Rubrik: "Kan jag bedöma resultatet själv?" Två kolumner: "Bedöm själv" (formulera om, ge idéer, första utkast) och "Kontrollera" (namn, årtal, siffror, citat, källor, juridik, medicin). Korten läggs dit ett i taget, utan kommentarer: "Gör mitt mejl vänligare i tonen" (bedöm själv), "Ge mig ett citat av en känd person till mitt tal" (kontrollera), "Vilken dos av den här medicinen ska jag ta?" (kontrollera), "Sammanfatta texten jag klistrat in" (mitt på linjen: "Beror på: har du läst texten själv?").
-  - Scen 3. "Tromsø kommun, 2025". "11 av 18 källhänvisningar gick inte att spåra. Flera hänvisade till påhittade publikationer. Underlaget till ett förslag om att lägga ner skolor, delvis framtaget med AI." "Kontrollera att källan finns och säger det som påstås." Märkt "Verklig händelse".
+  - Scen 1. Rubrik: "Så använder du den klokt". Till vänster ditt utkast: "Du har inte betalat medlemsavgiften. Betala senast fredag." Under det tänds tre steg: "1 Fråga med villkor", "2 Kontrollera resultatet" (med bock: "Fredag står kvar"), "3 Be om en ändring". Till höger växer samtalet fram: "Gör mitt mejl vänligare. Behåll uppgifterna och sista betalningsdagen. Högst tre meningar." Svar: "Hej! En vänlig påminnelse om medlemsavgiften. Betala gärna senast fredag. Tack!" Följdfråga: "Lite kortare, tack." Svar: "Hej! Kom ihåg medlemsavgiften senast fredag. Tack!"
+  - Scen 2. Rubrik: "Kan jag bedöma resultatet själv?" Två kolumner. "Bedöm själv" (du ser själv om det blev bra): "Gör mitt mejl vänligare i tonen", "Förklara ett krångligt brev", "Bolla idéer, skriv ett utkast". "Kontrollera" (namn, årtal, siffror, citat, källor, juridik, medicin): "Ge mig ett citat av en känd person till mitt tal", "Vilken dos av den här medicinen ska jag ta?". Mitt på linjen: "Sammanfatta texten jag klistrat in. Beror på: har du läst texten själv?" Bilden slutar med kolumnerna kvar på skärmen.
 - **Koppling till hallucination:** När vi vet att ett påhitt låter lika säkert som ett sant svar vet vi också var vi kan lita på vårt eget omdöme och var vi måste kontrollera.
 - **Publikmoment:** nej. Talaren lägger själv korten i rätt kolumn.
 - **Klick:** 6
-- **Tid:** ca 1 min 45 s
+- **Tid:** ca 1 min 20 s
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Så vad gör vi med allt det här? | Mejlet före och efter. |
-| 1 | Först: den här tekniken är till stor nytta. Här är ett kort mejl som blev lite väl kärvt, och chattbotens förslag på en vänligare ton. Du ser själv, direkt, om det blev bra. | Ny scen: ”Bedöm själv” och ”Kontrollera”. Första kortet: mejlet. |
-| 2 | Det är tumregeln. Chattboten är som bäst när du själv kan bedöma resultatet: formulera om en text, ge idéer, skriva ett första utkast. | Kortet om citatet, under ”Kontrollera”. |
-| 3 | Var på din vakt med sådant som antingen stämmer eller inte: namn, årtal, siffror, citat, källor. Ett citat till ett tal är precis sådant som kan vara påhittat. | Kortet om medicindosen, under ”Kontrollera”. |
-| 4 | Juridik och medicin hör också hit. Fråga apoteket eller läs bipacksedeln. | Kortet om sammanfattningen, mitt på linjen: beror på. |
-| 5 | Och ibland beror det på. Har du läst texten själv kan du bedöma sammanfattningen. Annars: stickprova mot originalet. | Tromsø: 11 av 18 källhänvisningar gick inte att spåra. |
-| 6 | Att det spelar roll fick Tromsø kommun i Norge erfara 2025. I underlaget till ett förslag om att lägga ner skolor gick 11 av 18 källhänvisningar inte att spåra. Flera hänvisade till publikationer som inte fanns. Underlaget var delvis framtaget med AI. Förslaget drogs tillbaka för kontroll, och den ansvariga chefen lämnade sin chefsroll. En extern granskning fann senare att slutsatserna inte ändrades. Men kontrollera alltid att källan finns och säger det som påstås. | Bild 12: tidslinjen. |
+| 0 | Så hur får du nytta av den? Vi tar ett exempel: ett mejl som blev lite väl kärvt. | Ditt utkast, och frågan med villkor. |
+| 1 | Ett: fråga med villkor. Säg vad som ska vara kvar och hur långt det får bli. | Chattbotens förslag. Kontrollera: fredag står kvar. |
+| 2 | Två: kontrollera resultatet. Står uppgifterna kvar? Fredag finns med. Det ser du själv, direkt. | Följdfrågan ”Lite kortare, tack” och det kortare svaret. |
+| 3 | Tre: be om en ändring. Du behöver inte börja om. Fortsätt samtalet tills du är nöjd. | Ny scen: ”Bedöm själv” med tre kort. |
+| 4 | Det är tumregeln. Chattboten är som bäst när du själv kan bedöma resultatet: göra om en text, förklara ett krångligt brev som du har klistrat in, bolla idéer eller skriva ett första utkast. | ”Kontrollera” med två kort: citatet och medicindosen. |
+| 5 | Var på din vakt med sådant som antingen stämmer eller inte: namn, årtal, siffror, citat och källor. Och med juridik och medicin: fråga apoteket eller läs bipacksedeln. | Kortet om sammanfattningen, mitt på linjen: beror på. |
+| 6 | Ibland beror det på. Har du läst texten själv kan du bedöma sammanfattningen. Annars: stickprova mot originalet. | Bild 12: tre vanor och QR-koden. |
 
-### Bild 12 – Åttio år på en bild
+### Bild 12 – Tre vanor, och mer att läsa
 
-- **Kärnbudskap:** Tekniken har byggts upp under åttio år, och påhitten har följt med sedan chattbotarna slog igenom.
+- **Kärnbudskap:** Tre vanor räcker långt, och det finns mer att läsa och prova för den som vill.
+- **Text på bilden:**
+  - Rubrik: "Tre vanor"
+  - 1. "Ge underlag som du får dela."
+  - 2. "Klicka på källorna."
+  - 3. "Dubbelkolla det som har konsekvenser."
+  - "Lätt att läsa är inte samma sak som rätt."
+  - Stor QR-kod, "Prova själv, se källorna och filmerna:" och adressen i klartext: speakman.github.io/varfor-hittar-ai-pa/fordjupning.
+- **Koppling till hallucination:** Sammanfattar vad publiken kan göra med det de har lärt sig.
+- **Publikmoment:** nej
+- **Klick:** 0
+- **Tid:** ca 30 s
+- **Talarmanus, per steg:**
+
+| Steg | Talaren säger | Nästa klick |
+|---|---|---|
+| 0 | Tre vanor räcker långt. Ge den underlag som du får dela, i stället för att be den minnas. Be om källor och klicka på dem. Dubbelkolla det som har konsekvenser. QR-koden leder till en sida där du kan prova själv på fem minuter, med källorna och några filmer. Adressen står under koden. Tack. Vad undrar ni över? [Klicka fram tidslinjen. Den ligger uppe under frågestunden.] | Bild 13: tidslinjen, som ligger uppe tyst under frågestunden. |
+
+### Bild 13 – Åttio år på en bild
+
+- **Kärnbudskap:** Tekniken har byggts upp under åttio år. Bilden pratas inte om. Den ligger uppe under frågestunden.
 - **Text på bilden:**
   - Rubrik: "Åttio år på en bild"
   - Övre spåret, byggstenarna (runda punkter): 1943 första modellen av en nervcell, 2012 djupa nät slår igenom, 2017 transformern, dagens arkitektur, 2020 GPT-3, 2022 ChatGPT släpps, 2023 chattbotar börjar söka på nätet, 2025 färre fel genom att avstå oftare.
   - Undre spåret, uppmärksammade fel (fyrkantiga markörer): februari 2023 Bard-reklamen, juni 2023 advokaterna i New York, mars 2025 Tromsø kommun.
-  - "Tidsaxeln är inte skalenlig." OpenAI:s artikel från 2025 ligger i det övre spåret (som "färre fel genom att avstå oftare"), inte bland felen. Bard-reklamen berättas här, inte på bild 9.
+  - Nere till vänster: en mindre QR-kod, teckenförklaringen, "Tidsaxeln är inte skalenlig." och adressen speakman.github.io/varfor-hittar-ai-pa/fordjupning. Allt syns direkt, utan klick.
 - **Koppling till hallucination:** Det undre spåret visar att påhitten har följt med från första dagen, och det övre slutar med arbetet för att få ner dem.
-- **Publikmoment:** nej
-- **Klick:** 1
-- **Tid:** ca 40 s
-- **Talarmanus, per steg:**
-
-| Steg | Talaren säger | Nästa klick |
-|---|---|---|
-| 0 | Det här tog åttio år att bygga. Från en första matematisk modell av en nervcell 1943 till chattbotar som söker på nätet och gör färre fel genom att avstå oftare. | De tre uppmärksammade felen under tidsaxeln. |
-| 1 | Och här är några uppmärksammade fel. Det första har ni inte hört om: i februari 2023 gjorde Googles chattbot Bard ett sakfel i en reklam. När felet uppmärksammades föll Alphabets börsvärde med ungefär 100 miljarder dollar. Påhitten har följt med sedan chattbotarna slog igenom. | Bild 13: tre vanor och QR-koden. |
-
-### Bild 13 – Tre vanor, och mer att läsa
-
-- **Kärnbudskap:** Tre vanor räcker långt, och det finns mer att läsa för den som vill.
-- **Text på bilden:**
-  - Rubrik: "Tre vanor"
-  - 1. "Ge underlaget."
-  - 2. "Klicka på källorna."
-  - 3. "Dubbelkolla det som har konsekvenser."
-  - "Lätt att läsa är inte samma sak som rätt."
-  - Stor QR-kod (platshållare tills adressen är bestämd), "Läs mer, se källorna och filmerna:" och adressen i klartext: ADRESS-KOMMER.
-- **Koppling till hallucination:** Sammanfattar vad publiken kan göra med det de har lärt sig.
 - **Publikmoment:** nej. Bilden står kvar under frågestunden.
 - **Klick:** 0
-- **Tid:** ca 30 s, står sedan kvar under frågestunden
+- **Tid:** ca ingen taltid, ligger uppe under frågestunden
 - **Talarmanus, per steg:**
 
 | Steg | Talaren säger | Nästa klick |
 |---|---|---|
-| 0 | Tre vanor räcker långt. Ge den underlaget i stället för att be den minnas. Be om källor och klicka på dem. Dubbelkolla det som har konsekvenser. QR-koden leder till en sida med källorna, några filmer och de mer invecklade resonemangen. Adressen står under koden för er som sitter långt bak. Tack. Vad undrar ni över? | Sista bilden. Den står kvar under frågestunden. |
+| 0 | [Tidslinjen ligger uppe tyst under frågestunden och har inget eget manus. QR-koden och adressen syns nere till vänster. Backa till bild 12 om någon vill se de tre vanorna igen.] | Sista bilden. Den står kvar under frågestunden. |
 
 ---
 
@@ -365,31 +365,31 @@
 
 | Bild | Rubrik | Manusord | Klick | Tid | Publikmoment |
 |---|---|---|---|---|---|
-| 0 | Varför hittar AI på saker? | 26 | 0 | cirka 15 s | nej |
-| 1 | Säker på rösten, fel i sak | 147 | 4 | 1 min 45 s | ja |
-| 2 | Ni kan också fylla i | 97 | 6 | 1 min | nej |
-| 3 | Ett ord i taget, och snöbollen | 186 | 5 | 1 min 45 s | nej |
-| 4 | Tränad med en gissningslek | 119 | 3 | 1 min 5 s | nej |
-| 5 | Ett suddigt minne, inget uppslagsverk | 167 | 4 | 1 min 30 s | nej |
-| 6 | Provet utan minuspoäng | 214 | 6 | 2 min 25 s | ja |
-| 7 | Lite slump i varje svar | 93 | 4 | 55 s | nej |
-| 8 | Skrivbordet | 166 | 4 | 1 min 30 s | nej |
-| 9 | Därför hittar den på | 110 | 5 | 1 min | nej |
-| 10 | Sökning hjälper, men löser inte allt | 157 | 4 | 1 min 25 s | nej |
-| 11 | Så använder du den klokt | 195 | 6 | 1 min 45 s | nej |
-| 12 | Åttio år på en bild | 74 | 1 | 40 s | nej |
-| 13 | Tre vanor, och mer att läsa | 55 | 0 | 30 s | nej |
-| **Summa** | | **1806** | **52** | **cirka 17 min 20 s** | **2** |
+| 0 | Varför hittar AI på saker? | 29 | 0 | cirka 15 s | nej |
+| 1 | Säker på rösten, fel i sak | 163 | 4 | 1 min 55 s | ja |
+| 2 | Ni kan också fylla i | 70 | 6 | 45 s | nej |
+| 3 | Ett ord i taget, och snöbollen | 153 | 5 | 1 min 30 s | nej |
+| 4 | Tränad med en gissningslek | 110 | 3 | 1 min | nej |
+| 5 | Ett suddigt minne, inget uppslagsverk | 130 | 4 | 1 min 10 s | nej |
+| 6 | Provet utan minuspoäng | 233 | 6 | 2 min 35 s | ja |
+| 7 | Frågan styr, och lite slump | 114 | 5 | 1 min 5 s | nej |
+| 8 | Skrivbordet | 175 | 4 | 1 min 30 s | nej |
+| 9 | Därför hittar den på | 96 | 5 | 55 s | nej |
+| 10 | Sökning hjälper, men löser inte allt | 156 | 4 | 1 min 25 s | nej |
+| 11 | Så använder du den klokt | 141 | 6 | 1 min 20 s | nej |
+| 12 | Tre vanor, och mer att läsa | 57 | 0 | 30 s | nej |
+| 13 | Åttio år på en bild | 0 | 0 | ingen taltid | nej |
+| **Summa** | | **1627** | **52** | **cirka 16 min** | **2** |
 
-**Så är tiden räknad:** talarmanusen är 1806 ord (regi inom hakparentes är inte medräknad). I lugnt tempo, cirka 125 ord per minut, tar de ungefär 14 min 27 s att säga. Till det kommer de två publikmomenten (bild 1: 20 s, bild 6: 25 s), väntan på rörelser som talaren inte pratar över (svaret som skrivs fram på bild 1, ordflygningen på bild 3 och staplarna på bild 6, tillsammans cirka 22 s), 1,5 s per klick (52 klick) och 2 s per bildbyte. Det ger cirka 17 min 20 s. Det är strax över målet 16–17 minuter, med drygt två och en halv minuts marginal till taket på 20. Tilläggen efter slutgranskningen (bild 3, 5, 8, 11 och 12) står för ungefär 50 sekunder. Jämfört med version 3 är talet längre (då 1 447 ord) och publikmomenten kortare (då 2 min 30 s). Tiden är uträknad, inte uppmätt. En repetition med klocka behövs.
+**Så är tiden räknad:** talarmanusen är 1627 ord (regi inom hakparentes är inte medräknad). I lugnt tempo, cirka 125 ord per minut, tar de ungefär 13 min 1 s att säga. Till det kommer de två publikmomenten (bild 1: 20 s, bild 6: 25 s), väntan på rörelser som talaren inte pratar över (svaret som skrivs fram på bild 1, ordflygningen på bild 3 och staplarna på bild 6, tillsammans cirka 22 s), 1,5 s per klick (52 klick) och 2 s per bildbyte. Det ger cirka 15 min 55 s, under målet på 18 minuter och med fyra minuters marginal till taket på 20. Version 4 var 1 806 ord och cirka 17 min 20 s. Tiden är uträknad, inte uppmätt. En repetition med klocka behövs.
 
-**Om tiden tryter, i den här ordningen:** hoppa över steg 3–4 på bild 8 (överfullt bord och påminnelsen), Bard-meningarna på bild 12, hela bild 12 (tidslinjen) och Tromsø på bild 11. Bild 6 kortas aldrig. Den bär föredragets tyngdpunkt.
+**Om tiden tryter, i den här ordningen:** hoppa över steg 3–4 på bild 8 (överfullt bord och påminnelsen), nyhetsstudien på bild 10 (steg 4) och kortet mitt på linjen på bild 11. Bild 6 och arbetsmetoden på bild 11 kortas aldrig.
 
 ---
 
 ## Till fördjupningssidan
 
-Det här ryms inte i föredraget. Det publiceras på fördjupningssidan (`docs/fordjupning.html`) som QR-koden på bild 13 leder till, och fungerar samtidigt som talarens stöd inför frågor.
+Det här ryms inte i föredraget. Det publiceras på fördjupningssidan (`docs/fordjupning.html`) som QR-koden på bild 12 och 13 leder till, och fungerar samtidigt som talarens stöd inför frågor.
 
 ### Filmer
 
@@ -415,7 +415,7 @@ OpenAI, "Why language models hallucinate", 5 september 2025: https://openai.com/
 
 | Vi säger | Mer exakt | Varför det är okej |
 |---|---|---|
-| "Den gissar nästa ord." | Den räknar ut en sannolikhet för varje möjlig nästa token (textbit) utifrån hela sammanhanget och väljer en. Tokens kan vara hela ord, delar av ord eller skiljetecken. | Rätt mekanism, vardagligt uttryckt. Vi nämner tokens i förbifarten på bild 3. |
+| "Den gissar nästa ord." | Den räknar ut en sannolikhet för varje möjlig nästa token (textbit) utifrån hela sammanhanget och väljer en. Tokens kan vara hela ord, delar av ord eller skiljetecken. | Rätt mekanism, vardagligt uttryckt. Ordet tokens sägs inte i talet. Det står i ordlistan. |
 | "Samma sak som mobilens ordförslag, bara mycket bättre." | Principen (förutsäg fortsättningen) är densamma, men modellen är ofantligt mycket större och väger in hela sammanhanget. Skillnaden i skala ger en skillnad i förmåga som är mer än gradvis. | På bild 4 säger vi att bra gissningar kräver att modellen fångar grammatik, fakta och resonemangsmönster. |
 | "Procenten gäller nästa ord, inte sanningen." | Staplarna visar hur troligt ett ord är som fortsättning. En jämn fördelning behöver inte betyda kunskapsbrist (flera formuleringar kan vara rätt), och en tydlig etta kan vara fel. Siffrorna är påhittade för att visa principen. | På bild 3 står "Även en mycket sannolik fortsättning kan vara fel", så att 93 % för Stockholm inte läses som "hög sannolikhet = sant". |
 | "Själva modellen slår inte upp något. Chattjänsten kan söka." | En chattjänst består av en språkmodell plus verktyg runt omkring: sökning, dokumentläsning, ibland minne mellan samtal. Modellen formulerar svaret, verktygen kan ge den underlag. | Skillnaden förklarar varför samma tjänst både kan hitta på och kan ge korrekta källor. |
@@ -425,12 +425,12 @@ OpenAI, "Why language models hallucinate", 5 september 2025: https://openai.com/
 | "Inget uppslagsverk. Ett suddigt fotografi." | Modellen kan återge vissa texter ordagrant, ibland även sådant som förekommit sällan. Den kan också dra slutsatser som aldrig stått någonstans. Men det finns ingen uppslagsfunktion som kontrollerar ett svar mot en källa. | Vi säger att vissa texter sitter ordagrant, och på bilden står att fotografiet är en liknelse. |
 | "Många miljarder små rattar." | Rattarna är tal (parametrar, eller vikter). Stora modeller har från miljarder upp till hundratals miljarder eller fler. Exakta antal offentliggörs inte alltid. | Grov, säker storleksordning. Ingen exakt siffra anges. |
 | "Tränas en gång till, med betyg från människor." | Flera steg: träning på exempelsamtal, träning utifrån mänskliga jämförelser och betyg, och allt oftare träning där andra modeller eller automatiska regler bedömer svaren. Metoderna skiljer sig mellan företag. | Huvudpoängen stämmer: assistentbeteendet är inlärt i ett senare steg, och vad som belönas formar beteendet. |
-| "En hjälpsam assistent hakar gärna på frågan." | Modeller har en dokumenterad tendens att godta en felaktig förutsättning i frågan och att hålla med användaren. Hur stark den är varierar mellan modeller, och utvecklarna arbetar med att minska den. | Står som en rad på bild 6, inte i talarmanuset. Vi skriver "gärna" och "lätt", inte "alltid". |
+| "En assistent vill gärna vara till lags." | Modeller har en dokumenterad tendens att godta en felaktig förutsättning i frågan och att hålla med användaren. Hur stark den är varierar mellan modeller, och utvecklarna arbetar med att minska den. | Sägs på bild 7, tillsammans med rådet att fråga öppet. Vi säger "gärna" och "lätt", inte "alltid". Källa på fördjupningssidan: https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models |
 | "Ett prov utan minuspoäng." | Analogin kommer från OpenAI (2025) och gäller framför allt hur modeller utvärderas och jämförs. Utvärderingarna styr i sin tur vad utvecklarna optimerar. Det är en förklaring bland flera, inte den enda. | Vi anger vems förklaringen är och säger "en del av förklaringen". |
 | "Tidiga versioner kunde mindre och avstod sällan." | Tidiga modeller var svagare generellt och sa sällan ifrån. Vi har ingen jämförbar mätserie från 2022 till i dag, och siffrorna på bild 6 jämför två modeller från 2025. | Vi ger ingen siffra för utvecklingen över tid, bara ett exempel från ett namngivet test. |
 | "Ungefär lika många rätt. Betydligt färre fel." | Andelen rätt var 24 % för den ena och 22 % för den andra modellen. Skillnaden ligger i att den senare avstod i stället för att gissa fel. | Påståendet är begränsat till testet och följer av siffrorna. |
 | "Lite slump i valet. Temperatur." | Temperatur ändrar hur spetsig sannolikhetsfördelningen är innan ett val görs. Den styr variationen, inte sanningen. Det finns fler inställningar, och i vanliga chattappar kan användaren oftast inte ändra dem. | Vi påstår inte att hög temperatur ger kreativitet eller att låg ger sanning. |
-| "Motstridiga svar är en varningsklocka." | En användbar tumregel som också används i forskningen, men ingen garanti. Modellen kan vara stabil och ha fel, eller variera i formulering och ha rätt. | Vi säger uttryckligen att ett stabilt svar inte är något bevis. |
+| "Motstridiga svar är en varningssignal." | En användbar tumregel som också används i forskningen, men ingen garanti. Modellen kan vara stabil och ha fel, eller variera i formulering och ha rätt. | Vi säger uttryckligen att ett stabilt svar inte är något bevis. |
 | "Ett skrivbord med begränsat underlag." | Underlaget kallas kontextfönster och mäts i tokens. Det rymmer i dag hundratals sidor. Tjänsten avgör vad som skickas med: äldre delar kan klippas bort eller sammanfattas, och vissa tjänster har ett separat minne mellan samtal. Även det som finns med kan förbises, särskilt mitt i långa texter. | Begränsat underlag är rätt bild, och vi visar det realistiska problemet (tomt eller överfullt bord), inte att korta samtal glöms. |
 | "Ingen pålitlig varningslampa." | Forskning tyder på att modeller har inre signaler som hänger ihop med hur säkra de är, och de kan ibland uttrycka osäkerhet träffsäkert. Men signalerna är inte tillförlitliga och styr inte alltid vad modellen skriver. | Ordet "pålitlig" bär nyansen. Vi säger också att modellen kan säga "jag vet inte". |
 | "Ingen chattbot i dag är felfri." | OpenAI menar att hallucinationer inte är oundvikliga i princip: en modell kan avstå när den är osäker. Men det kräver att modellen vet när den inte vet, och den signalen är inte pålitlig. Träffsäkerheten når aldrig 100 %, eftersom vissa frågor inte går att besvara. | Påståendet gäller dagens chattbotar i praktiken, inte en princip. |
@@ -445,11 +445,11 @@ OpenAI, "Why language models hallucinate", 5 september 2025: https://openai.com/
 Kontrollerade 2026-11-20 av tre externa granskare med webbsökning, och rättade efter det. Länkarna kommer från version 2 och från granskarna. "Säg" är det som står i talarmanuset. "Bakgrund" är till för frågor och för fördjupningssidan.
 
 **1. Advokaterna och de påhittade rättsfallen (bild 1)**
-- **Säg:** "2023 använde två advokater i New York sex rättsfall som ChatGPT hade hittat på, i en skrivelse till domstolen. En av dem frågade chattboten om fallen var äkta, och den svarade ja. Det slutade med 5 000 dollar i böter."
+- **Säg:** "2023 lämnade två advokater i New York in sex rättsfall till en domstol, som ChatGPT hade hittat på. Det slutade med 5 000 dollar i böter."
 - **Bakgrund:** *Mata v. Avianca*, federal domstol (S.D.N.Y.), domare P. Kevin Castel, beslut 22 juni 2023. Steven Schwartz gjorde efterforskningen med ChatGPT. Kollegan Peter LoDuca undertecknade och lämnade in skrivelsen. Att ChatGPT försäkrade att fallen var äkta framgår av domstolens beslut. Sanktionen på 5 000 dollar gällde advokaterna och byrån gemensamt, och gällde även att de stod fast vid fallen när de ifrågasattes.
 - **Källor:** [domstolens beslut](https://storage.courtlistener.com/recap/gov.uscourts.nysd.575368/gov.uscourts.nysd.575368.54.0.pdf), [ABA](https://www.americanbar.org/content/aba-cms-dotorg/en/groups/litigation/resources/litigation-news/2023/use-chatgpt-research-bogus-cases-sanctions), [The Guardian](https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt), [Legal Dive](https://www.legaldive.com/news/lawyer-fake-chatgpt-cases-sanctions-fines-lawyers-chatgpt-fake-cases/653741/).
 
-**2. Googles reklam med fel om rymdteleskopet (bild 12)**
+**2. Googles reklam med fel om rymdteleskopet (inte i talet, bara på fördjupningssidan)**
 - **Säg:** "I februari 2023 gjorde Googles chattbot Bard ett sakfel i en reklam. När felet uppmärksammades föll Alphabets börsvärde med ungefär 100 miljarder dollar."
 - **Bakgrund:** Reklamen publicerades 6 februari 2023. Bard heter i dag Gemini. Den första bilden av en exoplanet togs 2004 med ESO:s Very Large Telescope och bekräftades 2005. Alphabets aktie föll omkring 8 procent den 8 februari, när felet hade uppmärksammats. Fallet hade flera orsaker, bland annat allmän oro för Googles AI-satsning. Säg därför aldrig "samma dag" eller "på grund av".
 - **Källor:** [Reuters via StreetInsider](https://www.streetinsider.com/General%2BNews/Alphabet%2Bshares%2Bdive%2Bafter%2BGoogle%2BAI%2Bchatbot%2BBard%2Bflubs%2Banswer%2Bin%2Bad/21179919.html), [Al Jazeera](https://www.aljazeera.com/economy/2023/2/8/google-shares-tank-8-as-ai-chatbot-bard-flubs-answer-in-ad), [Fortune](https://fortune.com/2023/02/08/google-bard-ai-mistake-ad-stock-price-market-cap/amp/), [ESO 2004](https://www.eso.org/public/news/eso0428/), [ESO 2005](https://cdn3.eso.org/public/news/eso0515/).
@@ -459,7 +459,7 @@ Kontrollerade 2026-11-20 av tre externa granskare med webbsökning, och rättade
 - **Bakgrund:** *News Integrity in AI Assistants*, samordnad av EBU och ledd av BBC, publicerad 22 oktober 2025. Svaren samlades in i maj–juni 2025. 22 organisationer i 18 länder (inte bara europeiska), 14 språk, fyra assistenter (ChatGPT, Copilot, Gemini, Perplexity). De 45 procenten gäller betydande problem av alla slag, inte bara påhitt: 31 procent hade betydande källproblem och 20 procent betydande korrekthetsproblem, och kategorierna överlappar.
 - **Källor:** [rapporten (PDF)](https://www.ebu.ch/Report/MIS-BBC/NI_AI_2025.pdf), [EBU](https://www.ebu.ch/news/2025/10/ai-assistants-misrepresent-news-content-45-of-the-time), [BBC](https://www.bbc.co.uk/mediacentre/2025/new-ebu-research-ai-assistants-news-content), [SVT](https://www.svt.se/kultur/ny-rapport-nara-halften-av-ai-verktygen-ljuger-om-nyheter).
 
-**4. Tromsø kommuns skolförslag (bild 11)**
+**4. Tromsø kommuns skolförslag (inte i talet, bara på fördjupningssidan)**
 - **Säg:** "I underlaget till ett förslag om att lägga ner skolor gick 11 av 18 källhänvisningar inte att spåra. Flera hänvisade till publikationer som inte fanns. Underlaget var delvis framtaget med AI. Förslaget drogs tillbaka för kontroll, och den ansvariga chefen lämnade sin chefsroll. En extern granskning fann senare att slutsatserna inte ändrades."
 - **Bakgrund:** Förslaget till ny förskole- och skolstruktur lades fram i februari 2025. Tidningen iTromsø avslöjade i mars att flera källor inte fanns. Remissen stoppades tillfälligt. Avdelningsdirektören för uppväxt och utbildning lämnade chefsrollen (slutet av april 2025) men blev kvar i kommunen som rådgivare. PwC:s rapport är daterad 30 juni och presenterades 2 juli 2025. Den fann att de falska källorna inte hade ändrat förslagets slutsatser. Säg inte att chefen "fick gå" och antyd inte att skolnedläggningarna därmed avvärjdes.
 - **Källor:** [Tromsø kommune](https://www.tromso.kommune.no/nyheter/2025/07/her-er-rapporten-om-ki-bruk-og-barnehage-og-skolestruktur), [PwC](https://www.pwc.no/no/publikasjoner/evaluering-av-bruk-av-kunstig-intelligens-i-tromso-kommune.html), [Digi.no](https://digi.no/nyhetsstudio/kommunetopp-maa-gaa-av-etter-ki-skandale-i-tromsoe/77337), [Utdanningsnytt](https://www.utdanningsnytt.no/kunstig-intelligens-skolenedleggelser-tromso/slik-brukte-tromso-kommune-chatgpt-i-arbeidet-med-ny-skolestruktur/456970), [Altinget](https://www.altinget.no/artikkel/tung-om-ki-skandalen-i-tromsoe-kommunen-skal-ha-ros-for-aa-ta-i-bruk-teknologien).
@@ -472,7 +472,7 @@ Kontrollerade 2026-11-20 av tre externa granskare med webbsökning, och rättade
 
 ### Utförlig tidslinje
 
-Underlag till bild 12 (som visar ett urval: sju byggstenar och tre fel) och till fördjupningssidan (som visar hela listan). Årtalen är kontrollerade 2026-11-20 (se tasks/tidslinje-verifierad.md).
+Underlag till bild 13 (som visar ett urval: sju byggstenar och tre fel) och till fördjupningssidan (som visar hela listan). Årtalen är kontrollerade 2026-11-20 (se tasks/tidslinje-verifierad.md).
 
 **Byggstenarna**
 - **1943:** Warren McCulloch och Walter Pitts beskriver den första matematiska modellen av en nervcell.
@@ -512,3 +512,7 @@ Talaren ställer frågan om boken till en riktig chattbot inför publiken. Rekom
 - **Tokens:** texten delas i bitar som kan vara hela ord, delar av ord eller skiljetecken. Bitarna gör att modellen kan skriva ord den aldrig sett, men de är inte orsaken till påhitt. Även en modell som arbetade med hela ord skulle kunna sätta ihop "Margit" och "Holmsten".
 - **Temperatur:** inställningen som styr hur mycket slump som finns i ordvalet. Användaren kan sällan ändra den i en vanlig chattapp.
 - **Kontextfönster:** fackordet för skrivbordet, alltså den text modellen har framför sig när den svarar.
+
+### Integritet: vad som sägs var
+
+På bild 8 säger talaren bara vad man ska låta bli att klistra in: lösenord, personnummer, känsliga uppgifter, och att man följer jobbets regler. Detaljerna står på fördjupningssidan under "Vad händer med det du skriver?". Där skiljer vi på att samtal sparas och att de kan användas för träning. Uppgifterna om ChatGPT kommer från OpenAI:s hjälpsida, läst 2026-11-24: på personliga konton är delning för träning påslagen från början och kan stängas av under Data controls utan att historiken försvinner, och arbetsplatskonton (Business, Enterprise, Edu) används inte för träning om inget annat är inställt. Källa: https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt

@@ -32,6 +32,18 @@
 
 <main>
 
+<section id="prova">
+  <h2>Prova själv på fem minuter</h2>
+  <p>Det bästa sättet att förstå en chattbot är att prova den på något där du själv ser om resultatet blev bra. Ta ett mejl eller ett meddelande som du ändå ska skriva.</p>
+  <ol class="try">
+    <li><strong>Fråga med villkor.</strong> Klistra in ditt utkast och skriv till exempel: <q>Gör mitt mejl vänligare. Behåll uppgifterna och sista betalningsdagen. Högst tre meningar.</q></li>
+    <li><strong>Kontrollera resultatet.</strong> Står datum, belopp och namn kvar? Säger texten det du menar? Det ser du själv, direkt.</li>
+    <li><strong>Be om en ändring.</strong> Du behöver inte börja om. Skriv <q>Lite kortare, tack</q> eller <q>Mindre högtidligt</q> och fortsätt tills du är nöjd.</li>
+  </ol>
+  <p>Fler saker som är lätta att bedöma själv: be den förklara ett krångligt brev som du har klistrat in på vanlig svenska, bolla idéer till en inbjudan, eller skriva ett första utkast som du sedan gör till ditt eget.</p>
+  <p class="aside"><strong>Dela bara sådant du får dela.</strong> Klistra inte in lösenord, personnummer eller känsliga uppgifter om dig själv eller andra, och följ reglerna på ditt jobb. Läs mer under <a href="#integritet">Vad händer med det du skriver?</a></p>
+</section>
+
 <section id="kom-ihag">
   <h2>Tre saker att komma ihåg</h2>
   <ol class="big3">
@@ -44,11 +56,25 @@
 <section id="vanor">
   <h2>Tre vanor som räcker långt</h2>
   <ol class="habits">
-    <li><strong>Ge underlaget.</strong> Klistra in texten eller ladda upp dokumentet, i stället för att be chattboten minnas.</li>
+    <li><strong>Ge underlag som du får dela.</strong> Klistra in texten eller ladda upp dokumentet, i stället för att be chattboten minnas. Men lämna inte ut sådant som inte är ditt att dela.</li>
     <li><strong>Klicka på källorna.</strong> Be om källor och kontrollera att påståendet verkligen står där.</li>
     <li><strong>Dubbelkolla det som har konsekvenser.</strong> Namn, årtal, siffror, citat, juridik och medicin.</li>
   </ol>
   <p class="aside">Chattboten är som bäst när du själv kan bedöma resultatet: formulera om en text, ge idéer, skriva ett första utkast. Lätt att läsa är inte samma sak som rätt.</p>
+</section>
+
+<section id="integritet">
+  <h2>Vad händer med det du skriver?</h2>
+  <p>Två saker är lätta att blanda ihop.</p>
+  <ul>
+    <li><strong>Samtalen sparas.</strong> En chattjänst sparar normalt dina samtal på ditt konto, så att du kan hitta dem igen. Det du skriver lämnar alltså din dator.</li>
+    <li><strong>Samtalen kan användas för träning.</strong> Det är en annan sak: att företaget använder samtal för att förbättra kommande modeller. Det beror på tjänsten, på vilken sorts konto du har och på dina inställningar.</li>
+  </ul>
+  <p>Så här beskriver OpenAI det för ChatGPT (hjälpsidan lästes den 24 november 2026): på personliga konton är delning för träning påslagen från början. Du kan stänga av den under Settings och Data controls, med reglaget ”Improve the model for everyone”, och ändå behålla din samtalshistorik. Att stänga av den raderar inte sparade samtal. För arbetsplatskonton (Business, Enterprise och Edu) används innehållet enligt OpenAI inte för träning om inget annat är inställt.</p>
+  <p>Reglerna ändras och skiljer sig mellan tjänster. Läs vad som gäller för den tjänst du använder, och håll dig till grundregeln: dela bara sådant du får dela.</p>
+  <p>Det du klistrar in tränar för övrigt inte om modellen medan ni pratar. Det ligger bara framför den i det samtalet, som ett papper på ett skrivbord.</p>
+  <h4>Källa</h4>
+  <ul class="srcs"><li><a href="https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt" target="_blank" rel="noopener">OpenAI: Data controls in ChatGPT</a> <span class="lang">engelska</span></li></ul>
 </section>
 
 <section id="sa-fungerar-det">
@@ -60,8 +86,8 @@
     <li><h3>Steg 1: lära sig av text</h3><p>Modellen blir bra genom en gissningslek, upprepad på enorma mängder text: gissa nästa ord, jämför med vad som stod där, justera en aning. Facit är alltså vad som stod i texten, inte vad som är sant. Mycket blir rätt på köpet, men det är inte det modellen övar på i det här steget.</p></li>
     <li><h3>Ett suddigt minne, inget uppslagsverk</h3><p>Efter träningen finns inget arkiv att slå i. Kvar finns inlärda mönster, ungefär som ett suddigt fotografi av allt modellen har läst. Vanliga uppgifter är ofta lättare att återge, men även välkända fakta kan bli fel. Ovanliga uppgifter är suddigare, och där inget finns kan modellen fylla i något som passar mönstret när du frågar.</p></li>
     <li><h3>Steg 2: lära sig hjälpa, och provet utan minuspoäng</h3><p>För att bli en assistent tränas modellen en gång till, på exempelsamtal och med betyg från människor. Länge bedömdes modeller ungefär som på ett prov utan minuspoäng: blankt ger noll, en gissning kan ge poäng. Då lönar det sig att gissa. Nyare modeller avstår oftare när de är osäkra, och gör då färre fel.</p></li>
-    <li><h3>Lite slump i varje svar</h3><p>Modellen tar inte alltid den troligaste fortsättningen. Därför kan samma fråga ge olika svar. Får du uppgifter som säger emot varandra är det en varningsklocka. Men det omvända gäller inte: ett svar som är likadant varje gång kan vara lika påhittat.</p></li>
-    <li><h3>Skrivbordet: det modellen har framför sig</h3><p>När modellen svarar utgår den från det underlag den har framför sig: tjänstens instruktioner, samtalet och det du själv har klistrat in eller laddat upp. Rätt text på bordet ger färre fel. När chattboten får söka på nätet hamnar riktiga källor på bordet, men det är fortfarande samma modell som läser och sammanfattar. En länk bredvid ett påstående är en inbjudan att kontrollera, inget bevis.</p></li>
+    <li><h3>Lite slump i varje svar</h3><p>Modellen tar inte alltid den troligaste fortsättningen. Därför kan samma fråga ge olika svar. Får du uppgifter som säger emot varandra är det en varningssignal. Men det omvända gäller inte: ett svar som är likadant varje gång kan vara lika påhittat, och två svar från samma chattbot är inte två källor. Kontrollera uppgiften utanför chatten.</p></li>
+    <li><h3>Skrivbordet: det modellen har framför sig</h3><p>När modellen svarar utgår den från det underlag den har framför sig: tjänstens instruktioner, samtalet och det du själv har klistrat in eller laddat upp. Rätt text på bordet ger färre fel. När chattboten får söka på nätet hamnar riktiga källor på bordet, men det är fortfarande samma modell som läser och sammanfattar. En länk bredvid ett påstående är en inbjudan att kontrollera, inget bevis. Det modellen lärde sig under träningen har dessutom ett slutdatum. För nyheter, öppettider och annat som ändras: be den söka, öppna källan och titta på datumet.</p></li>
   </ol>
 </section>
 
@@ -104,7 +130,7 @@
 
 <section id="kallor">
   <h2>Det som hände på riktigt</h2>
-  <p>Fyra händelser nämndes i föredraget. Tryck på en rubrik för bakgrund och källor.</p>
+  <p>Advokaterna och nyhetsstudien nämndes i föredraget. De andra händelserna fick inte plats där. Tryck på en rubrik för bakgrund och källor.</p>
 <details class="card">
   <summary><span class="s-title">Advokaterna och de påhittade rättsfallen</span><span class="s-meta">New York, juni 2023</span><span class="s-lead">2023 lämnade två advokater i New York in en skrivelse till domstolen med sex rättsfall som ChatGPT hade hittat på. En av dem frågade chattboten om fallen var äkta, och den svarade ja. Det slutade med 5&nbsp;000 dollar i böter.</span></summary>
   <div class="more"><p>Målet heter <i>Mata v. Avianca</i> och avgjordes i en federal domstol i New York den 22 juni 2023. Steven Schwartz gjorde efterforskningen med ChatGPT. Kollegan Peter LoDuca undertecknade och lämnade in skrivelsen. Att ChatGPT försäkrade att fallen var äkta framgår av domstolens beslut. Sanktionen på 5&nbsp;000 dollar gällde advokaterna och byrån gemensamt, och gällde också att de stod fast vid fallen när de ifrågasattes.</p><h4>Källor</h4><ul class="srcs"><li><a href="https://storage.courtlistener.com/recap/gov.uscourts.nysd.575368/gov.uscourts.nysd.575368.54.0.pdf" target="_blank" rel="noopener">Domstolens beslut (PDF)</a> <span class="lang">engelska</span></li><li><a href="https://www.americanbar.org/content/aba-cms-dotorg/en/groups/litigation/resources/litigation-news/2023/use-chatgpt-research-bogus-cases-sanctions" target="_blank" rel="noopener">American Bar Association</a> <span class="lang">engelska</span></li><li><a href="https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt" target="_blank" rel="noopener">The Guardian</a> <span class="lang">engelska</span></li><li><a href="https://www.legaldive.com/news/lawyer-fake-chatgpt-cases-sanctions-fines-lawyers-chatgpt-fake-cases/653741/" target="_blank" rel="noopener">Legal Dive</a> <span class="lang">engelska</span></li></ul></div>
@@ -161,8 +187,8 @@
   <h2>Förenklingar vi gjorde, och varför de är okej</h2>
   <p>En kvart räcker inte till alla nyanser. Här står vad vi sa, vad som är mer exakt och varför förenklingen ändå håller. Tryck på en rad för att läsa mer.</p>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Den gissar nästa ord.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Den räknar ut en sannolikhet för varje möjlig nästa token (textbit) utifrån hela sammanhanget och väljer en. Tokens kan vara hela ord, delar av ord eller skiljetecken.</p><h4>Varför det är okej</h4><p>Rätt mekanism, vardagligt uttryckt.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Den väljer en trolig fortsättning, ett ord i taget.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Den räknar ut en sannolikhet för varje möjlig nästa token (textbit) utifrån hela sammanhanget och väljer en. Tokens kan vara hela ord, delar av ord eller skiljetecken.</p><h4>Varför det är okej</h4><p>Rätt mekanism, vardagligt uttryckt. För att göra det bra har modellen lärt sig mycket om språk och om världen.</p></div>
 </details>
 <details class="card simpl">
   <summary><span class="s-meta">Vi sa</span><span class="s-title">”Samma sak som mobilens ordförslag, bara mycket bättre.”</span></summary>
@@ -201,8 +227,8 @@
   <div class="more"><h4>Mer exakt</h4><p>Det sker i flera steg: träning på exempelsamtal, träning utifrån mänskliga jämförelser och betyg, och allt oftare träning där andra modeller eller automatiska regler bedömer svaren. Metoderna skiljer sig mellan företag.</p><h4>Varför det är okej</h4><p>Huvudpoängen stämmer: assistentbeteendet är inlärt i ett senare steg, och det som belönas formar beteendet.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”En hjälpsam assistent hakar gärna på frågan.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Modeller har en dokumenterad tendens att godta en felaktig förutsättning i frågan och att hålla med användaren. Hur stark den är varierar mellan modeller, och utvecklarna arbetar med att minska den.</p><h4>Varför det är okej</h4><p>Vi skrev ”gärna”, inte ”alltid”.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”En assistent vill gärna vara till lags.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Modeller har en dokumenterad tendens att godta en felaktig förutsättning i frågan och att hålla med den som frågar. Forskare kallar det inställsamhet (på engelska sycophancy). Hur stark den är varierar mellan modeller, och utvecklarna arbetar med att minska den. Därför hjälper det att fråga öppet: <q>Vad talar för och emot?</q> eller <q>Finns det något fel i mina antaganden?</q></p><h4>Varför det är okej</h4><p>Vi sa ”gärna” och ”lätt”, inte ”alltid”.</p><h4>Källa</h4><ul class="srcs"><li><a href="https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models" target="_blank" rel="noopener">Anthropic: Towards Understanding Sycophancy in Language Models</a> <span class="lang">engelska</span></li></ul></div>
 </details>
 <details class="card simpl">
   <summary><span class="s-meta">Vi sa</span><span class="s-title">”Ett prov utan minuspoäng.”</span></summary>
@@ -217,11 +243,11 @@
   <div class="more"><h4>Mer exakt</h4><p>Andelen rätt var 24&nbsp;procent för den ena modellen och 22&nbsp;procent för den andra. Skillnaden ligger i att den senare avstod i stället för att gissa fel. Siffrorna kommer ur tabellen i OpenAI:s artikel.</p><h4>Varför det är okej</h4><p>Påståendet är begränsat till testet och följer av siffrorna.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Lite slump i valet. Temperatur.”</span></summary>
-  <div class="more"><h4>Mer exakt</h4><p>Temperatur ändrar hur spetsig sannolikhetsfördelningen är innan ett val görs. Den styr variationen, inte sanningen. Det finns fler inställningar, och i vanliga chattappar kan du oftast inte ändra dem.</p><h4>Varför det är okej</h4><p>Vi påstod inte att hög temperatur ger kreativitet eller att låg ger sanning.</p></div>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Lite slump i valet.”</span></summary>
+  <div class="more"><h4>Mer exakt</h4><p>Hur mycket slump som används styrs av en inställning som kallas temperatur. Den ändrar hur spetsig sannolikhetsfördelningen är innan ett val görs. Den styr variationen, inte sanningen. Det finns fler inställningar, och i vanliga chattappar kan du oftast inte ändra dem.</p><h4>Varför det är okej</h4><p>Vi påstod inte att hög temperatur ger kreativitet eller att låg ger sanning.</p></div>
 </details>
 <details class="card simpl">
-  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Motstridiga svar är en varningsklocka.”</span></summary>
+  <summary><span class="s-meta">Vi sa</span><span class="s-title">”Motstridiga svar är en varningssignal.”</span></summary>
   <div class="more"><h4>Mer exakt</h4><p>En användbar tumregel som också används i forskningen, men ingen garanti. Modellen kan vara stabil och ha fel, eller variera i formulering och ha rätt.</p><h4>Varför det är okej</h4><p>Vi sa uttryckligen att ett stabilt svar inte är något bevis.</p></div>
 </details>
 <details class="card simpl">
@@ -305,7 +331,7 @@
 </footer>
 
 <nav class="dock" aria-label="Hoppa till">
-  <a href="#kom-ihag">Kom ihåg</a>
+  <a href="#prova">Prova själv</a>
   <a href="#sa-fungerar-det">Så fungerar det</a>
   <a href="#kallor">Källor</a>
   <a href="#filmer">Filmer</a>
